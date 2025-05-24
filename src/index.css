@@ -7,16 +7,16 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 245 245 245; /* whitesmoke */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 245 245 245; /* whitesmoke */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 245 245 245; /* whitesmoke */
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 336 100% 21%; /* #6a0032 */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,14 +33,14 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 336 100% 21%; /* #6a0032 */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 245 245 245; /* whitesmoke */
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 245 245 245; /* whitesmoke */
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
@@ -57,7 +57,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 336 100% 35%; /* lighter version for dark mode */
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -95,6 +95,32 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hero section with doodle background */
+.hero-doodle-bg {
+  background-image: url('/lovable-uploads/2bae1ad8-fd6a-48f2-b009-0ab3833f997b.png');
+  background-repeat: repeat;
+  background-size: 400px;
+  background-position: center;
+  opacity: 0.1;
+  position: relative;
+}
+
+.hero-doodle-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(106, 0, 50, 0.05) 0%, rgba(245, 245, 245, 0.9) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Schedule specific styles */

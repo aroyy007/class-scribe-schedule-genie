@@ -67,7 +67,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				schedule: {
-					lecture: '#2563eb', // Blue
+					lecture: '#6a0032', // Using primary color
 					tutorial: '#16a34a', // Green
 					lab: '#9333ea',    // Purple
 					exam: '#dc2626',   // Red
