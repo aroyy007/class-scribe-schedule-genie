@@ -1,0 +1,801 @@
+course_code,section,day,time,room,instructor,semester
+CSE 111,5,Sunday,10:00-11:30,N201,Ms. Arshiana Shamir,1
+CSE 111,4,Sunday,10:00-11:30,N203,Ms. Nahida Nigar,1
+AA 150,1,Sunday,10:00-11:30,N604,TBA,1
+CSE 111,1,Tuesday,03:00-04:30,N601,Ms. Arshiana Shamir,1
+AA 099,1,Tuesday,8:30-10:00,N604,TBA,1
+AA 200,1,Tuesday,10:00-11:30,N604,TBA,1
+CSE 111,5,Tuesday,01:30-03:00,N604,Ms. Arshiana Shamir,1
+CSE 112,5,Tuesday,9:30-11:30,313,Ms. Arshiana Shamir,1
+CSE 111,2,Wednesday,01:30-03:00,N601,Mr. Md. Jamil Uddin,1
+AA 200,1,Wednesday,10:00-11:30,N603,TBA,1
+CSE 112,2,Wednesday,9:30-11:30,313,Ms. Arshiana Shamir,1
+CSE 112,6,Wednesday,11:30-01:30,313,Ms. Nahida Nigar,1
+CSE 111,4,Thursday,01:30-03:00,N603,Ms. Nahida Nigar,1
+CSE 112,4,Thursday,9:30-11:30,313,Ms. Nahida Nigar,1
+CSE 112,1,Thursday,11:30-01:30,313,Ms. Arshiana Shamir,1
+CSE 111,1,Saturday,11:30-01:00,N 202,Ms. Anika Bushra,1
+CSE 112,2,Saturday,01:30-03:30,313,Ms. Anika Bushra,1
+CSE 112,1,Saturday,03:30-05:30,313,Ms. Anika Bushra,1
+CSE 111,2,Sunday,03:00-04:30,N 201,Ms. Anika Bushra,1
+CSE 111,3,Sunday,04:30-06:00,N 204,Ms. Anika Bushra,1
+CSE 111,3,Tuesday,10:00-11:30,114,Ms. Anika Bushra,1
+CSE 111,4,Tuesday,01:30-03:00,N 601,Ms. Anika Bushra,1
+CSE 112,4,Tuesday,9:30-11:30,313,Mr. Tahsin Mahmud,1
+CSE 112,3,Tuesday,11:30-01:30,313,Ms. Anika Bushra,1
+CSE 111,5,Wednesday,10:00-11:30,N 204,Mr. Joydwip Mohajon,1
+CSE 112,5,Wednesday,11:30-01:30,313,Mr. Joydwip Mohajon,1
+ENG 111,3,Saturday,10:00-11:30,N203,TBA,2
+MATH 107,3,Saturday,11:30-01:00,N203,Mr. Md. Sajeed-Ur-Rahman,2
+MATH 107,4,Saturday,10:00-11:30,N204,Mr. Md. Sajeed-Ur-Rahman,2
+ENG 111,4,Saturday,11:30-01:00,N204,TBA,2
+ENG 111,2,Saturday,01:30-03:00,N602,TBA,2
+MATH 107,2,Saturday,03:00-04:30,N602,TBA,2
+MATH 107,2,Saturday,04:30-06:30,N602,TBA,2
+MATH 107,1,Sunday,8:30-10:00,311,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,1,Sunday,10:00-11:30,311,Ms. Sharmin Akter,2
+PHY 101,1,Sunday,8:30-10:00,N604,TBA,2
+CSE 114,6,Sunday,9:30-11:30,313,Mr. Md. Jamil Uddin,2
+CSE 114,4,Sunday,01:30-03:30,313,Mr. Md. Jamil Uddin,2
+CSE 114,3,Sunday,03:30-05:30,313,Mr. Tanvir Azhar,2
+PHY 102,6,Sunday,11:30-01:30,109,Ms. Sharmin Akter,2
+PHY 102,3,Sunday,01:30-03:30,109,Ms. Sharmin Akter,2
+PHY 102,4,Sunday,03:30-05:30,109,Ms. Anika Bushra,2
+PHY 102,1,Monday,01:00-03:00,109,TBA,2
+PHY 102,1,Monday,03:00-04:45,109,TBA,2
+CSE 113,4,Tuesday,03:00-04:30,108,Mr. Md. Jamil Uddin,2
+MATH 107,4,Tuesday,04:30-06:30,108,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,2,Tuesday,03:00-04:30,110,Ms. Sharmin Akter,2
+MATH 107,2,Tuesday,04:30-06:30,110,TBA,2
+PHY 101,3,Tuesday,01:30-03:00,114,Ms. Sharmin Akter,2
+CSE 113,3,Tuesday,03:00-04:30,114,Mr. Tanvir Azhar,2
+CSE 113,3,Tuesday,04:30-06:30,114,Mr. Tanvir Azhar,2
+ENG 111,1,Tuesday,03:00-04:30,N204,TBA,2
+ENG 111,1,Tuesday,04:30-06:30,N204,TBA,2
+MATH 107,1,Tuesday,03:00-04:30,N603,Mr. Md. Sajeed-Ur-Rahman,2
+ENG 111,1,Tuesday,04:30-06:30,N603,TBA,2
+ENG 111,4,Wednesday,8:30-10:00,107,TBA,2
+PHY 101,4,Wednesday,10:00-11:30,107,TBA,2
+MATH 107,3,Wednesday,8:30-10:00,N201,Mr. Md. Sajeed-Ur-Rahman,2
+ENG 111,3,Wednesday,10:00-11:30,N201,TBA,2
+PHY 101,1,Wednesday,8:30-10:00,N603,TBA,2
+CSE 114,2,Wednesday,01:30-03:30,102,Mr. Tanvir Azhar,2
+CSE 114,5,Wednesday,9:30-11:30,104,Mr. Md. Jamil Uddin,2
+CSE 114,1,Wednesday,03:30-05:30,313,Mr. Tanvir Azhar,2
+PHY 102,5,Wednesday,11:30-01:30,109,Ms. Anika Bushra,2
+PHY 102,1,Wednesday,01:30-03:30,109,Ms. Sharmin Akter,2
+PHY 102,2,Wednesday,03:30-05:30,109,Ms. Sharmin Akter,2
+ENG 111,1,Thursday,03:00-04:30,103,TBA,2
+CSE 113,3,Thursday,01:30-03:00,110,Mr. Tanvir Azhar,2
+CSE 113,2,Thursday,03:00-04:30,110,Mr. Tanvir Azhar,2
+ENG 111,2,Thursday,04:30-06:30,110,TBA,2
+ENG 111,1,Thursday,10:00-11:30,N201,TBA,2
+CSE 113,1,Thursday,11:30-01:00,N202,Mr. Tanvir Azhar,2
+PHY 101,4,Thursday,03:00-04:30,N203,TBA,2
+CSE 113,4,Thursday,04:30-06:30,N203,Mr. Md. Jamil Uddin,2
+PHY 101,3,Thursday,11:30-01:00,N603,Ms. Sharmin Akter,2
+MATH 107,2,Saturday,03:00-04:30,311,Mr. Md. Sajeed-Ur-Rahman,2
+MATH 107,2,Saturday,04:30-06:00,311,Mr. Md. Sajeed-Ur-Rahman,2
+MATH 107,1,Saturday,01:30-03:00,312,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,4,Sunday,8:30-10:00,107,TBA,2
+MATH 107,4,Sunday,10:00-11:30,107,Mr. Md. Sajeed-Ur-Rahman,2
+CSE 113,5,Sunday,03:00-04:30,312,Ms. Nahida Nigar,2
+MATH 107,5,Sunday,04:30-06:00,312,Mr. Mashky Chowdhury Surja,2
+CSE 114,3,Sunday,01:30-03:30,104,Mr. Tanvir Azhar,2
+PHY 102,6,Sunday,01:30-03:30,109,Ms. Sharmin Akter,2
+PHY 102,3,Sunday,03:30-05:30,109,Ms. Sharmin Akter,2
+PHY 102,2,Sunday,9:30-11:30,115,Ms. Sharmin Akter,2
+CSE 114,2,Sunday,11:30-01:30,115,Mr. Tanvir Azhar,2
+CSE 114,6,Sunday,9:30-11:30,313,Mr. Sourav Adhikary,2
+PHY 102,1,Monday,01:00-03:00,109,Ms. Sharmin Akter,2
+PHY 102,1,Monday,03:00-04:45,109,Ms. Sharmin Akter,2
+CSE 114,1,Monday,03:00-04:45,313,Mr. Tanvir Azhar,2
+CSE 114,4,Monday,11:00-01:00,Novus 304,Ms. Nahida Nigar,2
+ENG 111,4,Tuesday,01:30-03:00,311,Ms. Parna Mutsuddy,2
+CSE 113,4,Tuesday,03:00-04:30,311,Ms. Nahida Nigar,2
+CSE 113,4,Tuesday,04:30-06:00,311,Ms. Nahida Nigar,2
+MATH 107,1,Tuesday,10:00-11:30,N 201,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,1,Tuesday,11:30-01:00,N 201,Ms. Sharmin Akter,2
+PHY 101,5,Tuesday,8:30-10:00,N 203,TBA,2
+CSE 113,5,Tuesday,10:00-11:30,N 203,Ms. Nahida Nigar,2
+MATH 107,2,Tuesday,8:30-10:00,N 204,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,2,Tuesday,10:00-11:30,N 204,Ms. Sharmin Akter,2
+MATH 107,3,Tuesday,11:30-01:00,N 603,Mr. Mashky Chowdhury Surja,2
+PHY 102,4,Tuesday,11:30-01:30,109,Ms. Anika Bushra,2
+PHY 102,4,Tuesday,01:30-03:30,109,Ms. Anika Bushra,2
+PHY 102,4,Tuesday,03:30-05:30,109,Ms. Anika Bushra,2
+CSE 113,1,Wednesday,10:00-11:30,103,Mr. Tanvir Azhar,2
+PHY 101,1,Wednesday,11:30-01:00,103,Ms. Sharmin Akter,2
+PHY 101,2,Wednesday,01:30-03:00,111,Ms. Sharmin Akter,2
+CSE 113,2,Wednesday,03:00-04:30,111,Mr. Tanvir Azhar,2
+CSE 113,2,Wednesday,04:30-06:00,111,Mr. Tanvir Azhar,2
+PHY 101,4,Wednesday,8:30-10:00,311,TBA,2
+MATH 107,4,Wednesday,10:00-11:30,311,Mr. Md. Sajeed-Ur-Rahman,2
+PHY 101,3,Wednesday,10:00-11:30,312,Ms. Sharmin Akter,2
+CSE 113,3,Wednesday,11:30-01:00,312,Mr. Tanvir Azhar,2
+ENG 111,5,Wednesday,03:00-04:30,N 204,Ms. Parna Mutsuddy,2
+MATH 107,5,Wednesday,04:30-06:00,N 204,Mr. Mashky Chowdhury Surja,2
+CSE 113,1,Thursday,03:00-04:30,108,Mr. Tanvir Azhar,2
+CSE 113,2,Thursday,11:30-01:00,111,Mr. Tanvir Azhar,2
+PHY 102,5,Thursday,11:30-01:30,109,TBA,2
+PHY 102,7,Thursday,01:30-03:30,109,Ms. Sharmin Akter,2
+PHY 102,7,Thursday,03:30-05:30,109,Ms. Sharmin Akter,2
+CSE 114,7,Thursday,11:30-01:30,115,Ms. Nahida Nigar,2
+CSE 114,5,Thursday,9:30-11:30,Novus 304,Ms. Nahida Nigar,2
+CHEM 201,2,Saturday,11:30-01:00,107,Ms. Maliha Zahan Chowdhury,3
+CHEM 201,2,Saturday,01:30-03:00,107,Ms. Maliha Zahan Chowdhury,3
+CHEM 201,2,Saturday,03:00-04:30,107,Ms. Maliha Zahan Chowdhury,3
+CHEM 201,2,Saturday,04:30-06:30,107,Ms. Maliha Zahan Chowdhury,3
+CHEM 201,3,Saturday,10:00-11:30,311,Ms. Maliha Zahan Chowdhury,3
+CSE 211,3,Saturday,11:30-01:00,311,Mr. Mohammed Morshed Rana,3
+CSE 211,3,Saturday,01:30-03:00,311,Mr. Mohammed Morshed Rana,3
+CSE 211,3,Saturday,03:00-04:30,311,Mr. Mohammed Morshed Rana,3
+CSE 211,3,Saturday,04:30-06:30,311,Mr. Mohammed Morshed Rana,3
+CHEM 201,4,Saturday,01:30-03:00,N202,Ms. Maliha Zahan Chowdhury,3
+CSE 211,4,Saturday,03:00-04:30,N202,Mr. Mohammed Morshed Rana,3
+CSE 211,4,Saturday,04:30-06:30,N202,Mr. Mohammed Morshed Rana,3
+CSE 211,2,Saturday,01:30-03:00,N603,Mr. Mohammed Morshed Rana,3
+CSE 211,2,Saturday,03:00-04:30,N603,Mr. Mohammed Morshed Rana,3
+CSE 211,2,Saturday,04:30-06:30,N603,Mr. Mohammed Morshed Rana,3
+EEE 111,3,Sunday,01:30-03:00,108,Ms. Tania Khadem,3
+MATH 207,2,Sunday,10:00-11:30,110,Mr. Md. Rakibul Islam,3
+EEE 111,2,Sunday,11:30-01:00,110,Ms. Tania Khadem,3
+CHEM 201,1,Sunday,8:30-10:00,111,Ms. Maliha Zahan Chowdhury,3
+CSE 211,1,Sunday,10:00-11:30,111,Mr. Mohammed Morshed Rana,3
+CSE 211,3,Sunday,03:00-04:30,111,Mr. Mohammed Morshed Rana,3
+EEE 111,4,Sunday,10:00-11:30,114,Ms. Tania Khadem,3
+CSE 211,4,Sunday,11:30-01:00,114,Mr. Mohammed Morshed Rana,3
+MATH 207,1,Sunday,01:30-03:00,311,Mr. Mashky Chowdhury Surja,3
+CHEM 201,1,Tuesday,04:30-06:30,107,Ms. Maliha Zahan Chowdhury,3
+MATH 207,2,Tuesday,01:30-03:00,108,Mr. Md. Rakibul Islam,3
+CHEM 201,2,Tuesday,11:30-01:00,N601,Ms. Maliha Zahan Chowdhury,3
+CHEM 201,0,Tuesday,01:30-03:00,N601,TBA,3
+CSE 212,4,Tuesday,11:30-01:30,313,Mr. Sourav Adhikary,3
+CSE 212,3,Tuesday,03:30-05:30,313,Mr. Mohammed Morshed Rana,3
+EEE 112,4,Tuesday,9:30-11:30,105,Ms. Tania Khadem,3
+EEE 112,6,Tuesday,11:30-01:30,105,Ms. Tania Khadem,3
+EEE 112,3,Tuesday,01:30-03:30,105,Ms. Tania Khadem,3
+EEE 111,4,Wednesday,01:30-03:00,107,Ms. Tania Khadem,3
+MATH 207,4,Wednesday,03:00-04:30,107,Mr. Mashky Chowdhury Surja,3
+MATH 207,3,Wednesday,03:00-04:30,N201,Mr. Mohammad Akbar Bin Shah,3
+MATH 207,3,Wednesday,04:30-06:30,N201,Mr. Mohammad Akbar Bin Shah,3
+MATH 207,1,Wednesday,01:30-03:00,N202,Mr. Mashky Chowdhury Surja,3
+CHEM 201,0,Wednesday,03:00-04:30,N202,TBA,3
+CHEM 201,3,Wednesday,04:30-06:30,N204,Ms. Maliha Zahan Chowdhury,3
+CSE 212,5,Wednesday,03:30-05:30,102,Mr. Sourav Adhikary,3
+CSE 212,1,Wednesday,03:30-05:30,104,Mr. Mohammed Morshed Rana,3
+CSE 212,2,Wednesday,11:30-01:30,N304,Mr. Mohammed Morshed Rana,3
+EEE 112,2,Wednesday,9:30-11:30,105,Ms. Tania Khadem,3
+EEE 112,1,Wednesday,01:30-03:30,105,Mr. Kazi Muhammad Asif Ashrafi,3
+EEE 112,5,Wednesday,01:30-03:30,106,Ms.Shahin Akter,3
+MATH 207,1,Thursday,03:00-04:30,107,Mr. Md. Rakibul Islam,3
+MATH 207,11,Saturday,11:30-01:00,103,TBA,3
+CHEM 201,1,Saturday,11:30-01:00,312,TBA,3
+MATH 207,1,Saturday,10:00-11:30,N 201,TBA,3
+MATH 207,2,Saturday,11:30-01:00,N 201,TBA,3
+MATH 207,3,Saturday,01:30-03:00,N 201,TBA,3
+CHEM 201,3,Saturday,03:00-04:30,N 201,TBA,3
+CHEM 201,3,Saturday,04:30-06:00,N 201,TBA,3
+MATH 207,12,Saturday,01:30-03:00,N 202,TBA,3
+CHEM 201,2,Saturday,01:30-03:00,N 203,TBA,3
+CHEM 201,2,Saturday,03:00-04:30,N 203,TBA,3
+CHEM 201,2,Saturday,04:30-06:00,N 203,TBA,3
+CSE 212,7,Saturday,9:30-11:30,102,Mr. Mohammad Akbar Bin Shah,3
+CSE 212,6,Saturday,11:30-01:30,102,Mr. Mohammad Akbar Bin Shah,3
+CSE 212,10,Saturday,03:30-05:30,104,Mr. Mohammad Akbar Bin Shah,3
+EEE 112,6,Saturday,9:30-11:30,106,TBA,3
+EEE 112,7,Saturday,11:30-01:30,106,TBA,3
+EEE 112,10,Saturday,01:30-03:30,106,TBA,3
+EEE 112,10,Saturday,03:30-05:30,106,TBA,3
+MATH 207,13,Sunday,03:00-04:30,108,Mr. Md. Rakibul Islam,3
+MATH 207,14,Sunday,04:30-06:00,110,Mr. Md. Rakibul Islam,3
+CHEM 201,2,Sunday,11:30-01:00,N 201,TBA,3
+EEE 111,2,Sunday,01:30-03:00,N 201,Ms. Tania Khadem,3
+CHEM 201,3,Sunday,8:30-10:00,N 202,TBA,3
+MATH 207,3,Sunday,10:00-11:30,N 202,TBA,3
+EEE 111,7,Sunday,03:00-04:30,N 203,TBA,3
+CSE 211,7,Sunday,04:30-06:00,N 203,Mr. Mohammad Akbar Bin Shah,3
+MATH 207,4,Sunday,03:00-04:30,N 602,Mr. Mohammad Akbar Bin Shah,3
+CSE 211,4,Sunday,04:30-06:00,N 602,Mr. Saklain Abdullah,3
+EEE 112,2,Sunday,9:30-11:30,105,Ms. Tania Khadem,3
+EEE 112,3,Sunday,11:30-01:30,105,Ms. Tania Khadem,3
+EEE 112,3,Sunday,01:30-03:30,105,Ms. Tania Khadem,3
+EEE 112,3,Sunday,03:30-05:30,105,Ms. Tania Khadem,3
+CSE 212,4,Sunday,01:30-03:30,313,Mr. Saklain Abdullah,3
+CSE 212,5,Monday,11:00-01:00,102,Mr. Saklain Abdullah,3
+CSE 212,2,Monday,01:00-03:00,102,Ms. Shadika Afroze Ome,3
+CHEM 201,5,Tuesday,03:00-04:30,111,Ms. Maliha Zahan Chowdhury,3
+MATH 207,5,Tuesday,04:30-06:00,111,TBA,3
+EEE 111,6,Tuesday,10:00-11:30,312,TBA,3
+CSE 211,6,Tuesday,11:30-01:00,312,Mr. Mohammad Akbar Bin Shah,3
+MATH 207,4,Tuesday,03:00-04:30,N 203,Mr. Mohammad Akbar Bin Shah,3
+CSE 211,4,Tuesday,04:30-06:00,N 203,Mr. Saklain Abdullah,3
+MATH 207,0,Tuesday,01:30-03:00,N 204,Mr. Mashky Chowdhury Surja,3
+CSE 212,8,Tuesday,11:30-01:30,104,Ms. Shadika Afroze Ome,3
+CSE 212,9,Tuesday,01:30-03:30,104,Mr. Saklain Abdullah,3
+CSE 212,9,Tuesday,03:30-05:30,104,Mr. Saklain Abdullah,3
+EEE 112,8,Tuesday,9:30-11:30,106,Ms. Tania Khadem,3
+EEE 112,5,Tuesday,01:30-03:30,106,Mr. Kazi Muhammad Asif Ashrafi,3
+EEE 112,5,Tuesday,03:30-05:30,106,Mr. Kazi Muhammad Asif Ashrafi,3
+EEE 111,6,Wednesday,8:30-10:00,108,TBA,3
+CSE 211,6,Wednesday,10:00-11:30,108,Mr. Mohammad Akbar Bin Shah,3
+MATH 207,7,Wednesday,8:30-10:00,110,TBA,3
+EEE 111,7,Wednesday,10:00-11:30,110,TBA,3
+EEE 111,1,Wednesday,01:30-03:00,312,Ms. Tania Khadem,3
+CSE 211,3,Wednesday,10:00-11:30,N 201,Ms. Shadika Afroze Ome,3
+EEE 111,3,Wednesday,11:30-01:00,N 201,Ms. Tania Khadem,3
+MATH 207,5,Wednesday,8:30-10:00,N 202,TBA,3
+CHEM 201,5,Wednesday,10:00-11:30,N 202,Ms. Maliha Zahan Chowdhury,3
+CSE 211,1,Wednesday,11:30-01:00,N 202,Ms. Shadika Afroze Ome,3
+MATH 207,0,Wednesday,01:30-03:00,N 204,Mr. Mashky Chowdhury Surja,3
+EEE 112,4,Wednesday,11:30-01:30,105,TBA,3
+EEE 112,1,Wednesday,9:30-11:30,106,Ms. Tania Khadem,3
+EEE 112,9,Wednesday,11:30-01:30,106,Mr. Kazi Muhammad Asif Ashrafi,3
+CSE 212,3,Wednesday,01:30-03:30,115,Ms. Shadika Afroze Ome,3
+CSE 212,3,Wednesday,03:30-05:30,115,Ms. Shadika Afroze Ome,3
+CSE 211,5,Thursday,03:00-04:30,107,Mr. Saklain Abdullah,3
+CSE 211,1,Thursday,11:30-01:00,311,Ms. Shadika Afroze Ome,3
+CHEM 201,1,Thursday,01:30-03:00,311,TBA,3
+CHEM 201,1,Thursday,03:00-04:30,311,TBA,3
+CHEM 201,1,Thursday,04:30-06:00,311,TBA,3
+MATH 207,6,Thursday,8:30-10:00,N 202,TBA,3
+CHEM 201,6,Thursday,10:00-11:30,N 202,TBA,3
+CHEM 201,7,Thursday,8:30-10:00,N 203,TBA,3
+MATH 207,7,Thursday,10:00-11:30,N 203,TBA,3
+MATH 207,12,Thursday,04:30-06:00,N 204,TBA,3
+MATH 207,11,Thursday,03:00-04:30,N 601,TBA,3
+MATH 207,2,Thursday,01:30-03:00,N 604,TBA,3
+CSE 211,2,Thursday,03:00-04:30,N 604,Ms. Shadika Afroze Ome,3
+CSE 211,2,Thursday,04:30-06:00,N 604,Ms. Shadika Afroze Ome,3
+CSE 212,1,Thursday,9:30-11:30,313,Ms. Shadika Afroze Ome,3
+EEE 213,4,Saturday,11:30-01:00,108,Ms.Shahin Akter,4
+EEE 213,5,Saturday,10:00-11:30,110,Ms.Shahin Akter,4
+EEE 213,1,Sunday,11:30-01:00,107,TBA,4
+CSE 123,1,Sunday,01:30-03:00,110,Mr. Joydwip Mohajon,4
+EEE 213,7,Sunday,03:00-04:30,114,TBA,4
+EEE 213,7,Sunday,04:30-06:30,114,TBA,4
+EEE 213,6,Sunday,01:30-03:00,312,TBA,4
+CSE 115,6,Sunday,11:30-01:00,N201,Ms. Anika Bushra,4
+CSE 115,6,Sunday,01:30-03:00,N201,Ms. Anika Bushra,4
+CSE 115,7,Sunday,01:30-03:00,N202,Ms. Anika Bushra,4
+CSE 115,2,Sunday,03:00-04:30,N602,TBA,4
+HUM 201,2,Sunday,04:30-06:30,N602,TBA,4
+HUM 201,3,Sunday,03:00-04:30,N603,TBA,4
+CSE 115,3,Sunday,04:30-06:30,N603,TBA,4
+CSE 124,4,Sunday,01:30-03:30,102,Mr. Tahsin Mahmud,4
+CSE 124,5,Sunday,03:30-05:30,102,Mr. Tahsin Mahmud,4
+CSE 124,9,Sunday,11:30-01:30,313,Mr. Joydwip Mohajon,4
+CSE 124,1,Sunday,03:30-05:30,N304,Mr. Joydwip Mohajon,4
+EEE 214,9,Sunday,9:30-11:30,106,Ms.Shahin Akter,4
+EEE 214,9,Sunday,11:30-01:30,106,Ms.Shahin Akter,4
+EEE 214,5,Sunday,01:30-03:30,106,Ms.Shahin Akter,4
+EEE 214,4,Sunday,03:30-05:30,106,Ms.Shahin Akter,4
+EEE 214,2,Monday,11:00-01:00,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 214,2,Monday,01:00-03:00,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 214,2,Monday,03:00-04:45,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 213,7,Tuesday,11:30-01:00,107,TBA,4
+EEE 213,3,Tuesday,01:30-03:00,111,TBA,4
+CSE 123,3,Tuesday,03:00-04:30,111,Mr. Joydwip Mohajon,4
+CSE 123,3,Tuesday,04:30-06:30,111,Mr. Joydwip Mohajon,4
+CSE 123,4,Tuesday,03:00-04:30,N202,Mr. Tahsin Mahmud,4
+EEE 213,4,Tuesday,04:30-06:30,N202,Ms.Shahin Akter,4
+EEE 213,5,Tuesday,03:00-04:30,N203,Ms.Shahin Akter,4
+CSE 123,5,Tuesday,04:30-06:30,N203,Mr. Tahsin Mahmud,4
+CSE 115,2,Tuesday,8:30-10:00,N601,TBA,4
+CSE 123,2,Tuesday,10:00-11:30,N601,Mr. Joydwip Mohajon,4
+CSE 115,1,Tuesday,11:30-01:00,N602,TBA,4
+CSE 124,6,Tuesday,03:30-05:30,115,Mr. Sourav Adhikary,4
+CSE 124,2,Tuesday,11:30-01:30,N304,Mr. Joydwip Mohajon,4
+EEE 214,6,Tuesday,01:30-03:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 214,1,Tuesday,03:30-05:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+CSE 123,6,Wednesday,10:00-11:30,108,Mr. Sourav Adhikary,4
+EEE 213,6,Wednesday,11:30-01:00,108,TBA,4
+CSE 123,2,Wednesday,11:30-01:00,111,Mr. Joydwip Mohajon,4
+EEE 213,2,Wednesday,01:30-03:00,111,TBA,4
+CSE 115,5,Wednesday,04:30-06:30,N202,Ms. Anika Bushra,4
+CSE 123,4,Wednesday,01:30-03:00,N204,Mr. Tahsin Mahmud,4
+CSE 115,4,Wednesday,03:00-04:30,N204,Ms. Anika Bushra,4
+CSE 123,5,Wednesday,03:00-04:30,N601,Mr. Tahsin Mahmud,4
+CSE 123,5,Wednesday,04:30-06:30,N601,Mr. Tahsin Mahmud,4
+CSE 123,3,Wednesday,01:30-03:00,N602,Mr. Joydwip Mohajon,4
+CSE 115,3,Wednesday,03:00-04:30,N602,TBA,4
+CSE 115,3,Wednesday,04:30-06:30,N602,TBA,4
+CSE 123,1,Wednesday,03:00-04:30,N603,Mr. Joydwip Mohajon,4
+CSE 123,1,Wednesday,04:30-06:30,N603,Mr. Joydwip Mohajon,4
+CSE 124,7,Wednesday,01:30-03:30,115,Mr. Sourav Adhikary,4
+EEE 214,7,Wednesday,03:30-05:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+CSE 115,4,Thursday,10:00-11:30,N202,Ms. Anika Bushra,4
+CSE 115,5,Thursday,8:30-10:00,N203,Ms. Anika Bushra,4
+CSE 123,7,Thursday,03:00-04:30,N602,Mr. Sourav Adhikary,4
+CSE 123,6,Thursday,04:30-06:30,N603,Mr. Sourav Adhikary,4
+CSE 124,3,Thursday,01:30-03:30,313,Mr. Joydwip Mohajon,4
+CSE 124,8,Thursday,9:30-11:30,N304,Mr. Joydwip Mohajon,4
+EEE 214,8,Thursday,11:30-01:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 214,8,Thursday,01:30-03:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+EEE 214,3,Thursday,03:30-05:30,106,Mr. Kazi Muhammad Asif Ashrafi,4
+CSE 124,1,Saturday,03:30-05:30,Novus 304,Mr. Mohammed Morshed Rana,4
+CSE 123,3,Sunday,04:30-06:00,108,Mr. Joydwip Mohajon,4
+CSE 123,2,Sunday,10:00-11:30,110,Ms. Maliha Zahan Chowdhury,4
+HUM 201,2,Sunday,04:30-06:00,311,TBA,4
+CSE 123,1,Sunday,11:30-01:00,N 601,Mr. Mohammed Morshed Rana,4
+HUM 201,1,Sunday,03:00-04:30,N 604,TBA,4
+HUM 201,1,Sunday,04:30-06:00,N 604,TBA,4
+CSE 124,5,Monday,11:00-01:00,115,Mr. Mohammed Morshed Rana,4
+CSE 124,2,Monday,01:00-03:00,115,Ms. Maliha Zahan Chowdhury,4
+CSE 123,1,Tuesday,04:30-06:00,312,Mr. Mohammed Morshed Rana,4
+CSE 123,4,Tuesday,04:30-06:00,N 202,Mr. Joydwip Mohajon,4
+CSE 124,4,Tuesday,01:30-03:30,102,Mr. Joydwip Mohajon,4
+CSE 123,4,Wednesday,03:00-04:30,N 601,Mr. Joydwip Mohajon,4
+CSE 123,2,Wednesday,01:30-03:00,N 604,Ms. Maliha Zahan Chowdhury,4
+CSE 124,3,Thursday,9:30-11:30,115,Mr. Joydwip Mohajon,4
+CSE 124,6,Thursday,01:30-03:30,115,Mr. Joydwip Mohajon,4
+CSE 215,3,Sunday,11:30-01:00,311,Mr. Ahamed- Al- Arifin,5
+CSE 215,4,Sunday,10:00-11:30,312,Mr. Ahamed- Al- Arifin,5
+CSE 221,4,Sunday,11:30-01:00,312,Mr. Tahsin Mahmud,5
+CSE 225,3,Sunday,01:30-03:00,N603,Ms. Nishat Soultana Chy,5
+CSE 226,5,Sunday,03:30-05:30,115,Ms. Nishat Soultana Chy,5
+ENG 112,11,Sunday,9:30-11:30,N304,Ms. Parna Mutsuddy,5
+ENG 112,12,Sunday,11:30-01:30,N304,Ms. Parna Mutsuddy,5
+CSE 216,2,Sunday,9:30-11:30,105,Mr. Sanath Kumar Das,5
+CSE 216,1,Sunday,11:30-01:30,105,Mr. Md. Rakibul Islam,5
+CSE 216,5,Sunday,01:30-03:30,105,Mr. Md. Rakibul Islam,5
+CSE 226,4,Monday,9:00-11:00,102,Mr. Md. Jamil Uddin,5
+CSE 222,4,Monday,11:00-01:00,102,Mr. Tahsin Mahmud,5
+ENG 112,1,Monday,01:00-03:00,102,TBA,5
+ENG 112,13,Monday,03:00-04:45,102,Ms. Parna Mutsuddy,5
+CSE 222,6,Monday,9:00-11:00,313,Mr. Tahsin Mahmud,5
+CSE 226,6,Monday,11:00-01:00,313,Mr. Md. Jamil Uddin,5
+CSE 216,3,Monday,01:00-03:00,105,Mr. Md. Siratul Mustakim Ifty,5
+CSE 221,3,Tuesday,10:00-11:30,103,Mr. Md. Sabbir Al Ahsan,5
+CSE 215,3,Tuesday,11:30-01:00,114,Mr. Ahamed- Al- Arifin,5
+CSE 215,4,Tuesday,10:00-11:30,312,Mr. Ahamed- Al- Arifin,5
+CSE 225,4,Tuesday,11:30-01:00,312,Mr. Md. Jamil Uddin,5
+ENG 112,4,Tuesday,9:30-11:30,102,Ms. Parna Mutsuddy,5
+CSE 222,5,Tuesday,11:30-01:30,102,Mr. Tahsin Mahmud,5
+CSE 222,1,Tuesday,01:30-03:30,102,Mr. Md. Sabbir Al Ahsan,5
+CSE 226,1,Tuesday,03:30-05:30,102,Ms. Nishat Soultana Chy,5
+ENG 112,15,Tuesday,01:30-03:30,115,Ms. Parna Mutsuddy,5
+CSE 226,2,Tuesday,01:30-03:30,N304,Ms. Nishat Soultana Chy,5
+CSE 222,2,Tuesday,03:30-05:30,N304,Mr. Md. Sabbir Al Ahsan,5
+CSE 215,2,Wednesday,10:00-11:30,103,Mr. Sanath Kumar Das,5
+CSE 221,3,Wednesday,01:30-03:00,108,Mr. Md. Sabbir Al Ahsan,5
+CSE 225,3,Wednesday,03:00-04:30,108,Ms. Nishat Soultana Chy,5
+CSE 225,3,Wednesday,04:30-06:30,108,Ms. Nishat Soultana Chy,5
+CSE 221,1,Wednesday,03:00-04:30,311,Mr. Md. Sabbir Al Ahsan,5
+CSE 225,1,Wednesday,04:30-06:30,311,Ms. Nishat Soultana Chy,5
+CSE 221,4,Wednesday,10:00-11:30,312,Mr. Tahsin Mahmud,5
+CSE 225,4,Wednesday,11:30-01:00,312,Mr. Md. Jamil Uddin,5
+CSE 221,2,Wednesday,11:30-01:00,N202,Mr. Md. Sabbir Al Ahsan,5
+ENG 112,1,Wednesday,9:30-11:30,115,Ms. Parna Mutsuddy,5
+ENG 112,3,Wednesday,11:30-01:30,115,Ms. Parna Mutsuddy,5
+ENG 112,2,Wednesday,01:30-03:30,N304,Ms. Parna Mutsuddy,5
+CSE 215,1,Thursday,01:30-03:00,311,Mr. Sanath Kumar Das,5
+CSE 221,1,Thursday,03:00-04:30,311,Mr. Md. Sabbir Al Ahsan,5
+CSE 221,1,Thursday,04:30-06:30,311,Mr. Md. Sabbir Al Ahsan,5
+CSE 215,2,Thursday,11:30-01:00,312,Mr. Sanath Kumar Das,5
+CSE 225,2,Thursday,01:30-03:00,N203,Ms. Nishat Soultana Chy,5
+ENG 112,16,Thursday,11:30-01:30,102,Ms. Parna Mutsuddy,5
+ENG 112,14,Thursday,9:30-11:30,115,Ms. Parna Mutsuddy,5
+CSE 222,3,Thursday,01:30-03:30,N304,Mr. Md. Sabbir Al Ahsan,5
+CSE 226,3,Thursday,03:30-05:30,N304,Ms. Nishat Soultana Chy,5
+CSE 216,6,Thursday,9:30-11:30,105,Mr. Md. Rakibul Islam,5
+CSE 216,4,Thursday,11:30-01:30,105,Mr. Md. Rakibul Islam,5
+CSE 216,4,Thursday,01:30-03:30,105,Mr. Md. Rakibul Islam,5
+CSE 216,4,Thursday,03:30-05:30,105,Mr. Md. Rakibul Islam,5
+CSE 221,7,Saturday,10:00-11:30,N 204,Ms. Tahmina Akter Sumi,5
+CSE 225,7,Saturday,11:30-01:00,N 204,Mr. Mohammed Morshed Rana,5
+CSE 225,8,Saturday,01:30-03:00,N 204,Mr. Mohammed Morshed Rana,5
+CSE 225,8,Saturday,03:00-04:30,N 204,Mr. Mohammed Morshed Rana,5
+CSE 225,8,Saturday,04:30-06:00,N 204,Mr. Mohammed Morshed Rana,5
+CSE 221,8,Saturday,11:30-01:00,N 602,Ms. Tahmina Akter Sumi,5
+ENG 112,1,Saturday,11:30-01:30,115,Ms. Parna Mutsuddy,5
+ENG 112,2,Saturday,01:30-03:30,115,Ms. Parna Mutsuddy,5
+ENG 112,3,Saturday,03:30-05:30,115,Ms. Parna Mutsuddy,5
+CSE 222,7,Saturday,01:30-03:30,Novus 304,Ms. Tahmina Akter Sumi,5
+CSE 215,7,Sunday,11:30-01:00,108,TBA,5
+CSE 215,1,Sunday,10:00-11:30,111,Mr. Ahamed- Al- Arifin,5
+CSE 225,1,Sunday,11:30-01:00,111,Ms. Nishat Soultana Chy,5
+CSE 215,8,Sunday,01:30-03:00,111,TBA,5
+CSE 221,6,Sunday,11:30-01:00,114,Mr. Tahsin Mahmud,5
+CSE 225,6,Sunday,01:30-03:00,114,Mr. Sourav Adhikary,5
+CSE 215,4,Sunday,10:00-11:30,312,Mr. Sanath Kumar Das,5
+CSE 225,4,Sunday,11:30-01:00,312,Mr. Sourav Adhikary,5
+CSE 221,2,Sunday,11:30-01:00,N 202,Mr. Md. Sabbir Al Ahsan,5
+CSE 225,2,Sunday,01:30-03:00,N 202,Ms. Nishat Soultana Chy,5
+CSE 221,8,Sunday,03:00-04:30,N 202,Ms. Tahmina Akter Sumi,5
+CSE 221,8,Sunday,04:30-06:00,N 202,Ms. Tahmina Akter Sumi,5
+CSE 221,3,Sunday,10:00-11:30,N 203,Mr. Md. Sabbir Al Ahsan,5
+CSE 215,3,Sunday,11:30-01:00,N 203,Mr. Ahamed- Al- Arifin,5
+CSE 225,7,Sunday,01:30-03:00,N 204,Mr. Mohammed Morshed Rana,5
+CSE 221,5,Sunday,01:30-03:00,N 603,Mr. Tahsin Mahmud,5
+CSE 215,5,Sunday,03:00-04:30,N 603,Mr. Sanath Kumar Das,5
+CSE 215,5,Sunday,04:30-06:00,N 603,Mr. Sanath Kumar Das,5
+ENG 112,4,Sunday,01:30-03:30,102,Ms. Parna Mutsuddy,5
+CSE 222,6,Sunday,03:30-05:30,104,Mr. Tahsin Mahmud,5
+CSE 216,1,Sunday,01:30-03:30,106,Mr. Ahamed- Al- Arifin,5
+CSE 216,1,Sunday,03:30-05:30,106,Mr. Ahamed- Al- Arifin,5
+CSE 226,2,Sunday,03:30-05:30,115,Ms. Nishat Soultana Chy,5
+ENG 112,5,Sunday,11:30-01:30,313,Ms. Parna Mutsuddy,5
+CSE 226,7,Sunday,9:30-11:30,Novus 304,Mr. Mohammed Morshed Rana,5
+ENG 112,7,Sunday,03:30-05:30,Novus 304,Ms. Parna Mutsuddy,5
+CSE 226,10,Monday,03:00-04:45,102,Mr. Sourav Adhikary,5
+ENG 112,6,Monday,01:00-03:00,104,Ms. Parna Mutsuddy,5
+CSE 216,9,Monday,01:00-03:00,105,TBA,5
+CSE 216,11,Monday,03:00-04:45,105,TBA,5
+CSE 222,9,Monday,03:00-04:45,115,Mr. Md. Sabbir Al Ahsan,5
+CSE 222,10,Monday,01:00-03:00,313,Mr. Tahsin Mahmud,5
+CSE 226,11,Monday,01:00-03:00,Novus 304,Mr. Mohammed Morshed Rana,5
+CSE 226,11,Monday,03:00-04:45,Novus 304,Mr. Mohammed Morshed Rana,5
+CSE 215,6,Tuesday,10:00-11:30,103,Mr. Sanath Kumar Das,5
+CSE 225,6,Tuesday,11:30-01:00,103,Mr. Sourav Adhikary,5
+CSE 221,5,Tuesday,11:30-01:00,111,Mr. Tahsin Mahmud,5
+CSE 221,4,Tuesday,01:30-03:00,111,Mr. Tahsin Mahmud,5
+CSE 215,4,Tuesday,11:30-01:00,114,Mr. Sanath Kumar Das,5
+CSE 215,3,Tuesday,11:30-01:00,311,Mr. Ahamed- Al- Arifin,5
+CSE 215,2,Tuesday,01:30-03:00,N 202,Mr. Ahamed- Al- Arifin,5
+CSE 221,1,Tuesday,8:30-10:00,N 602,Ms. Tahmina Akter Sumi,5
+CSE 225,1,Tuesday,10:00-11:30,N 602,Ms. Nishat Soultana Chy,5
+CSE 225,5,Tuesday,01:30-03:00,N 603,Mr. Sourav Adhikary,5
+CSE 225,2,Tuesday,11:30-01:00,N 604,Ms. Nishat Soultana Chy,5
+CSE 225,3,Tuesday,01:30-03:00,N 604,Ms. Nishat Soultana Chy,5
+CSE 226,5,Tuesday,03:30-05:30,102,Mr. Sourav Adhikary,5
+CSE 216,2,Tuesday,9:30-11:30,105,Mr. Ahamed- Al- Arifin,5
+CSE 216,7,Tuesday,01:30-03:30,105,TBA,5
+CSE 216,4,Tuesday,03:30-05:30,105,Mr. Md. Siratul Mustakim Ifty,5
+CSE 216,8,Tuesday,11:30-01:30,106,TBA,5
+CSE 222,11,Tuesday,11:30-01:30,Novus 304,Ms. Tahmina Akter Sumi,5
+CSE 222,8,Tuesday,01:30-03:30,Novus 304,Ms. Tahmina Akter Sumi,5
+CSE 215,8,Wednesday,11:30-01:00,108,TBA,5
+CSE 221,2,Wednesday,10:00-11:30,111,Mr. Md. Sabbir Al Ahsan,5
+CSE 215,2,Wednesday,11:30-01:00,111,Mr. Ahamed- Al- Arifin,5
+CSE 221,3,Wednesday,11:30-01:00,114,Mr. Md. Sabbir Al Ahsan,5
+CSE 225,8,Wednesday,01:30-03:00,N 202,Mr. Mohammed Morshed Rana,5
+CSE 215,1,Wednesday,10:00-11:30,N 203,Mr. Ahamed- Al- Arifin,5
+CSE 221,1,Wednesday,11:30-01:00,N 203,Ms. Tahmina Akter Sumi,5
+CSE 215,7,Wednesday,01:30-03:00,N 203,TBA,5
+CSE 221,7,Wednesday,03:00-04:30,N 203,Ms. Tahmina Akter Sumi,5
+CSE 221,7,Wednesday,04:30-06:00,N 203,Ms. Tahmina Akter Sumi,5
+CSE 225,3,Wednesday,01:30-03:00,N 601,Ms. Nishat Soultana Chy,5
+CSE 226,8,Wednesday,03:30-05:30,102,Mr. Mohammed Morshed Rana,5
+CSE 216,10,Wednesday,03:30-05:30,105,Mr. S.M. Baque Billah,5
+CSE 216,6,Wednesday,03:30-05:30,106,Mr. Md. Siratul Mustakim Ifty,5
+CSE 222,4,Wednesday,11:30-01:30,115,Mr. Tahsin Mahmud,5
+CSE 226,6,Wednesday,01:30-03:30,313,Mr. Sourav Adhikary,5
+CSE 226,6,Wednesday,03:30-05:30,313,Mr. Sourav Adhikary,5
+CSE 222,5,Wednesday,9:30-11:30,Novus 304,Mr. Tahsin Mahmud,5
+CSE 222,1,Wednesday,01:30-03:30,Novus 304,Ms. Tahmina Akter Sumi,5
+CSE 226,3,Wednesday,03:30-05:30,Novus 304,Ms. Nishat Soultana Chy,5
+CSE 215,6,Thursday,10:00-11:30,107,Mr. Sanath Kumar Das,5
+CSE 221,6,Thursday,11:30-01:00,107,Mr. Tahsin Mahmud,5
+CSE 221,4,Thursday,01:30-03:00,108,Mr. Tahsin Mahmud,5
+CSE 225,5,Thursday,01:30-03:00,312,Mr. Sourav Adhikary,5
+CSE 215,5,Thursday,03:00-04:30,312,Mr. Sanath Kumar Das,5
+CSE 215,5,Thursday,04:30-06:00,312,Mr. Sanath Kumar Das,5
+CSE 225,4,Thursday,11:30-01:00,N 601,Mr. Sourav Adhikary,5
+CSE 222,2,Thursday,9:30-11:30,102,Mr. Md. Sabbir Al Ahsan,5
+CSE 222,3,Thursday,11:30-01:30,102,Mr. Md. Sabbir Al Ahsan,5
+CSE 226,9,Thursday,01:30-03:30,102,Ms. Nishat Soultana Chy,5
+CSE 216,3,Thursday,9:30-11:30,105,Mr. Ahamed- Al- Arifin,5
+CSE 216,5,Thursday,11:30-01:30,105,TBA,5
+CSE 226,4,Thursday,03:30-05:30,313,Mr. Sourav Adhikary,5
+CSE 226,1,Thursday,03:30-05:30,Novus 304,Ms. Nishat Soultana Chy,5
+CSE 313,7,Saturday,10:00-11:30,114,TBA,6
+CSE 315,7,Saturday,11:30-01:00,114,Mr. Riad Hossain,6
+CSE 315,6,Saturday,10:00-11:30,312,Mr. Riad Hossain,6
+CSE 313,6,Saturday,11:30-01:00,312,TBA,6
+CSE 313,5,Saturday,01:30-03:00,312,TBA,6
+CSE 315,5,Saturday,03:00-04:30,312,Mr. Riad Hossain,6
+CSE 315,5,Saturday,04:30-06:30,312,Mr. Riad Hossain,6
+CSE 311,7,Sunday,11:30-01:00,108,TBA,6
+CSE 311,4,Sunday,11:30-01:00,111,Ms. Saraf Anika,6
+CSE 311,8,Sunday,01:30-03:00,114,TBA,6
+CSE 313,4,Sunday,01:30-03:00,N204,TBA,6
+CSE 313,6,Sunday,10:00-11:30,N601,TBA,6
+CSE 313,5,Sunday,8:30-10:00,N602,TBA,6
+CSE 315,5,Sunday,10:00-11:30,N602,Mr. Riad Hossain,6
+CSE 312,4,Sunday,9:30-11:30,102,Ms. Saraf Anika,6
+CSE 312,1,Sunday,11:30-01:30,102,Mr. Md. Jahidul Hasan Jahid,6
+CSE 316,1,Sunday,9:30-11:30,104,Ms. Sayeda Suaiba Anwar,6
+CSE 316,9,Sunday,11:30-01:30,104,Ms. Sayeda Suaiba Anwar,6
+CSE 316,7,Sunday,01:30-03:30,104,Mr. Riad Hossain,6
+CSE 316,2,Sunday,03:30-05:30,104,Ms. Sayeda Suaiba Anwar,6
+CSE 312,9,Sunday,9:30-11:30,115,Mr. Sourav Adhikary,6
+CSE 312,2,Sunday,01:30-03:30,115,Mr. Md. Jahidul Hasan Jahid,6
+CSE 316,6,Monday,01:00-03:00,104,Mr. Riad Hossain,6
+CSE 316,5,Monday,03:00-04:45,104,Mr. Riad Hossain,6
+CSE 312,10,Monday,9:00-11:00,115,Mr. Sourav Adhikary,6
+CSE 312,11,Monday,11:00-01:00,115,Mr. Sourav Adhikary,6
+CSE 312,5,Monday,01:00-03:00,115,Ms. Saraf Anika,6
+CSE 312,6,Monday,03:00-04:45,115,Ms. Saraf Anika,6
+CSE 312,3,Monday,03:00-04:45,N304,TBA,6
+CSE 315,2,Tuesday,10:00-11:30,110,Ms. Sayeda Suaiba Anwar,6
+CSE 315,3,Tuesday,11:30-01:00,110,Ms. Sayeda Suaiba Anwar,6
+CSE 311,3,Tuesday,01:30-03:00,110,TBA,6
+CSE 315,8,Tuesday,8:30-10:00,111,Mr. Riad Hossain,6
+CSE 313,8,Tuesday,10:00-11:30,111,TBA,6
+CSE 313,7,Tuesday,8:30-10:00,114,TBA,6
+CSE 315,7,Tuesday,10:00-11:30,114,Mr. Riad Hossain,6
+CSE 311,5,Tuesday,11:30-01:00,311,Ms. Saraf Anika,6
+CSE 311,1,Tuesday,04:30-06:30,N602,Mr. Md. Jahidul Hasan Jahid,6
+CSE 313,4,Tuesday,01:30-03:00,N603,TBA,6
+CSE 316,3,Tuesday,03:30-05:30,104,Ms. Sayeda Suaiba Anwar,6
+CSE 312,7,Tuesday,11:30-01:30,115,TBA,6
+CSE 311,2,Wednesday,11:30-01:00,110,Mr. Md. Jahidul Hasan Jahid,6
+CSE 313,2,Wednesday,01:30-03:00,110,TBA,6
+CSE 313,3,Wednesday,03:00-04:30,110,TBA,6
+CSE 315,8,Wednesday,8:30-10:00,114,Mr. Riad Hossain,6
+CSE 313,8,Wednesday,10:00-11:30,114,TBA,6
+CSE 311,7,Wednesday,01:30-03:00,114,TBA,6
+CSE 313,1,Wednesday,04:30-06:30,114,TBA,6
+CSE 311,4,Wednesday,10:00-11:30,N202,Ms. Saraf Anika,6
+CSE 315,6,Wednesday,10:00-11:30,N204,Mr. Riad Hossain,6
+CSE 311,6,Wednesday,11:30-01:00,N204,Ms. Saraf Anika,6
+CSE 312,8,Wednesday,11:30-01:30,104,TBA,6
+CSE 311,2,Thursday,8:30-10:00,108,Mr. Md. Jahidul Hasan Jahid,6
+CSE 315,2,Thursday,10:00-11:30,108,Ms. Sayeda Suaiba Anwar,6
+CSE 311,6,Thursday,11:30-01:00,108,Ms. Saraf Anika,6
+CSE 311,5,Thursday,10:00-11:30,110,Ms. Saraf Anika,6
+CSE 311,1,Thursday,10:00-11:30,111,Mr. Md. Jahidul Hasan Jahid,6
+CSE 315,1,Thursday,11:30-01:00,111,Ms. Sayeda Suaiba Anwar,6
+CSE 311,8,Thursday,01:30-03:00,111,TBA,6
+CSE 311,3,Thursday,11:30-01:00,114,TBA,6
+CSE 312,2,Sunday,9:30-11:30,102,Ms. Saraf Anika,6
+CSE 312,4,Sunday,11:30-01:30,102,Ms. Saraf Anika,6
+CSE 316,2,Sunday,11:30-01:30,104,Ms. Sayeda Suaiba Anwar,6
+CSE 316,3,Monday,11:00-01:00,104,Ms. Sayeda Suaiba Anwar,6
+CSE 311,1,Tuesday,11:30-01:00,110,Ms. Saraf Anika,6
+CSE 313,1,Tuesday,01:30-03:00,110,TBA,6
+CSE 315,3,Tuesday,03:00-04:30,110,Ms. Sayeda Suaiba Anwar,6
+CSE 315,2,Tuesday,01:30-03:00,114,Ms. Sayeda Suaiba Anwar,6
+CSE 313,2,Tuesday,03:00-04:30,114,TBA,6
+CSE 313,2,Tuesday,04:30-06:00,114,TBA,6
+CSE 312,1,Tuesday,9:30-11:30,104,Ms. Saraf Anika,6
+CSE 311,2,Wednesday,10:00-11:30,107,Ms. Saraf Anika,6
+CSE 313,1,Wednesday,01:30-03:00,110,TBA,6
+CSE 315,3,Wednesday,01:30-03:00,114,Ms. Sayeda Suaiba Anwar,6
+CSE 313,3,Wednesday,03:00-04:30,114,TBA,6
+CSE 313,3,Wednesday,04:30-06:00,114,TBA,6
+CSE 312,3,Wednesday,11:30-01:30,102,Ms. Saraf Anika,6
+CSE 311,3,Thursday,11:30-01:00,N 602,Ms. Saraf Anika,6
+CSE 311,2,Thursday,10:00-11:30,N 604,Ms. Saraf Anika,6
+CSE 223,3,Saturday,01:30-03:00,114,Ms.Shahin Akter,7
+MATH 203,3,Saturday,03:00-04:30,114,TBA,7
+MATH 203,3,Saturday,04:30-06:30,114,TBA,7
+MATH 203,1,Saturday,01:30-03:00,N601,TBA,7
+CSE 325,1,Saturday,03:00-04:30,N601,Mr. Md. Jibon Mia,7
+CSE 325,1,Saturday,04:30-06:30,N601,Mr. Md. Jibon Mia,7
+CSE 326,1,Saturday,11:30-01:30,115,Mr. Md. Jibon Mia,7
+CSE 326,1,Saturday,01:30-03:30,115,Mr. Md. Jibon Mia,7
+CSE 326,1,Saturday,03:30-05:30,115,Mr. Md. Jibon Mia,7
+CSE 223,2,Sunday,11:30-01:00,N601,Mr. Md. Siratul Mustakim Ifty,7
+MATH 203,2,Sunday,01:30-03:00,N601,TBA,7
+CSE 223,1,Tuesday,11:30-01:00,111,Mr. Md. Siratul Mustakim Ifty,7
+CSE 325,3,Tuesday,11:30-01:00,N202,Mr. Md. Jibon Mia,7
+CSE 223,3,Tuesday,01:30-03:00,N202,Ms.Shahin Akter,7
+MATH 203,1,Tuesday,01:30-03:00,N203,TBA,7
+MATH 203,2,Tuesday,11:30-01:00,N204,TBA,7
+CSE 325,2,Tuesday,01:30-03:00,N204,Mr. Md. Jibon Mia,7
+CSE 326,3,Tuesday,9:30-11:30,N304,Mr. Md. Jibon Mia,7
+CSE 224,2,Tuesday,9:30-11:30,106,Mr. Md. Siratul Mustakim Ifty,7
+CSE 326,4,Wednesday,01:30-03:30,104,Mr. Md. Jibon Mia,7
+CSE 326,2,Wednesday,03:30-05:30,N304,Mr. Md. Jibon Mia,7
+CSE 224,1,Wednesday,11:30-01:30,105,Mr. Md. Siratul Mustakim Ifty,7
+CSE 224,4,Wednesday,03:30-05:30,105,Mr. Md. Siratul Mustakim Ifty,7
+CSE 224,3,Wednesday,9:30-11:30,106,Ms.Shahin Akter,7
+CSE 325,2,Thursday,03:00-04:30,312,Mr. Md. Jibon Mia,7
+CSE 223,2,Thursday,04:30-06:30,312,Mr. Md. Siratul Mustakim Ifty,7
+CSE 325,3,Thursday,11:30-01:00,N201,Mr. Md. Jibon Mia,7
+MATH 203,3,Thursday,01:30-03:00,N201,TBA,7
+CSE 325,1,Thursday,10:00-11:30,N204,Mr. Md. Jibon Mia,7
+CSE 223,1,Thursday,11:30-01:00,N204,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,1,Thursday,01:30-03:00,N204,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,1,Thursday,03:00-04:30,N204,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,1,Thursday,04:30-06:30,N204,Mr. Md. Siratul Mustakim Ifty,7
+MATH 203,4,Saturday,01:30-03:00,110,TBA,7
+MATH 203,4,Saturday,03:00-04:30,110,TBA,7
+MATH 203,4,Saturday,04:30-06:00,110,TBA,7
+MATH 203,5,Saturday,11:30-01:00,N 603,TBA,7
+CSE 325,5,Saturday,01:30-03:00,N 603,Mr. Md. Jibon Mia,7
+CSE 325,5,Saturday,03:00-04:30,N 603,Mr. Md. Jibon Mia,7
+CSE 325,5,Saturday,04:30-06:00,N 603,Mr. Md. Jibon Mia,7
+CSE 325,4,Saturday,11:30-01:00,N 604,Mr. Md. Jibon Mia,7
+CSE 224,1,Saturday,9:30-11:30,105,Ms.Shahin Akter,7
+CSE 224,2,Saturday,11:30-01:30,105,Ms.Shahin Akter,7
+CSE 224,3,Saturday,01:30-03:30,105,Ms.Shahin Akter,7
+CSE 224,3,Saturday,03:30-05:30,105,Ms.Shahin Akter,7
+CSE 326,4,Saturday,9:30-11:30,115,Mr. Md. Jibon Mia,7
+CSE 223,2,Sunday,01:30-03:00,312,Ms.Shahin Akter,7
+CSE 223,3,Sunday,10:00-11:30,N 603,Ms.Shahin Akter,7
+CSE 325,2,Sunday,11:30-01:00,N 603,Mr. Md. Jibon Mia,7
+CSE 223,1,Sunday,8:30-10:00,N 604,Ms.Shahin Akter,7
+CSE 325,1,Sunday,10:00-11:30,N 604,Ms. Sayeda Suaiba Anwar,7
+CSE 325,3,Sunday,11:30-01:00,N 604,Mr. Mohammad Akbar Bin Shah,7
+CSE 326,2,Sunday,03:30-05:30,102,Mr. Md. Jibon Mia,7
+CSE 224,5,Sunday,9:30-11:30,106,Mr. Md. Siratul Mustakim Ifty,7
+CSE 224,4,Sunday,11:30-01:30,106,Mr. Md. Siratul Mustakim Ifty,7
+CSE 326,3,Sunday,01:30-03:30,115,Ms. Tahmina Akter Sumi,7
+CSE 326,7,Sunday,01:30-03:30,Novus 304,Mr. Md. Jibon Mia,7
+CSE 326,6,Monday,03:00-04:45,104,Ms. Sayeda Suaiba Anwar,7
+CSE 224,2,Monday,11:00-01:00,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 224,5,Monday,01:00-03:00,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 224,4,Monday,03:00-04:45,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 223,3,Tuesday,03:00-04:30,N 204,Mr. Kazi Muhammad Asif Ashrafi,7
+MATH 203,2,Tuesday,01:30-03:00,N 602,TBA,7
+CSE 325,2,Tuesday,03:00-04:30,N 602,Mr. Md. Jibon Mia,7
+CSE 325,2,Tuesday,04:30-06:00,N 602,Mr. Md. Jibon Mia,7
+MATH 203,1,Tuesday,8:30-10:00,N 603,TBA,7
+CSE 223,1,Tuesday,10:00-11:30,N 603,Ms.Shahin Akter,7
+CSE 325,3,Tuesday,8:30-10:00,N 604,Mr. Mohammad Akbar Bin Shah,7
+MATH 203,3,Tuesday,10:00-11:30,N 604,TBA,7
+CSE 326,1,Tuesday,11:30-01:30,102,Ms. Sayeda Suaiba Anwar,7
+CSE 223,3,Wednesday,03:00-04:30,312,Ms.Shahin Akter,7
+MATH 203,3,Wednesday,04:30-06:00,312,TBA,7
+CSE 325,4,Wednesday,8:30-10:00,N 601,Mr. Md. Jibon Mia,7
+CSE 325,5,Wednesday,10:00-11:30,N 601,Mr. Md. Jibon Mia,7
+CSE 223,5,Wednesday,11:30-01:00,N 601,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,4,Wednesday,10:00-11:30,N 602,Mr. Md. Siratul Mustakim Ifty,7
+MATH 203,1,Wednesday,10:00-11:30,N 603,TBA,7
+CSE 325,1,Wednesday,11:30-01:00,N 603,Ms. Sayeda Suaiba Anwar,7
+CSE 223,3,Wednesday,01:30-03:00,N 603,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 223,2,Wednesday,10:00-11:30,N 604,Ms.Shahin Akter,7
+MATH 203,2,Wednesday,11:30-01:00,N 604,TBA,7
+CSE 326,5,Wednesday,01:30-03:30,102,Mr. Md. Jibon Mia,7
+CSE 224,6,Wednesday,01:30-03:30,106,Ms.Shahin Akter,7
+CSE 223,5,Thursday,11:30-01:00,108,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,4,Thursday,01:30-03:00,111,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,4,Thursday,03:00-04:30,111,Mr. Md. Siratul Mustakim Ifty,7
+CSE 223,4,Thursday,04:30-06:00,111,Mr. Md. Siratul Mustakim Ifty,7
+MATH 203,4,Thursday,11:30-01:00,N 204,TBA,7
+MATH 203,5,Thursday,01:30-03:00,N 602,TBA,7
+MATH 203,5,Thursday,03:00-04:30,N 602,TBA,7
+MATH 203,5,Thursday,04:30-06:00,N 602,TBA,7
+CSE 224,7,Thursday,9:30-11:30,106,Mr. Md. Siratul Mustakim Ifty,7
+CSE 224,3,Thursday,11:30-01:30,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 224,1,Thursday,01:30-03:30,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 224,6,Thursday,03:30-05:30,106,Mr. Kazi Muhammad Asif Ashrafi,7
+CSE 317,3,Saturday,10:00-11:30,N202,TBA,8
+CSE 317,4,Saturday,11:30-01:00,N602,TBA,8
+MATH 301,2,Sunday,11:30-01:00,103,TBA,8
+MATH 301,1,Sunday,01:30-03:00,111,Mr. Mohammad Akbar Bin Shah,8
+MATH 301,4,Sunday,03:00-04:30,N201,Mr. Mohammad Akbar Bin Shah,8
+CSE 319,1,Sunday,11:30-01:00,N202,Ms. Arifa Sultana Zarna,8
+CSE 319,2,Sunday,10:00-11:30,N204,Ms. Arifa Sultana Zarna,8
+MATH 301,2,Sunday,11:30-01:00,N204,Mr. Mohammad Akbar Bin Shah,8
+CSE 320,3,Monday,01:00-03:00,313,Ms. Arifa Sultana Zarna,8
+CSE 320,6,Monday,01:00-03:00,N304,Mr. Md. Jahidul Hasan Jahid,8
+CSE 319,2,Tuesday,10:00-11:30,108,Ms. Arifa Sultana Zarna,8
+CSE 317,1,Tuesday,03:00-04:30,N201,TBA,8
+CSE 317,1,Tuesday,04:30-06:30,N201,TBA,8
+CSE 319,3,Wednesday,10:00-11:30,311,Ms. Arifa Sultana Zarna,8
+CSE 319,4,Wednesday,01:30-03:00,311,Mr. Md. Jahidul Hasan Jahid,8
+CSE 317,4,Wednesday,11:30-01:00,N201,TBA,8
+CSE 317,4,Wednesday,01:30-03:00,N201,TBA,8
+CSE 317,1,Wednesday,8:30-10:00,N601,TBA,8
+CSE 317,2,Wednesday,10:00-11:30,N602,TBA,8
+CSE 320,2,Wednesday,11:30-01:30,102,Ms. Arifa Sultana Zarna,8
+CSE 320,4,Wednesday,03:30-05:30,115,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,2,Thursday,8:30-10:00,107,TBA,8
+MATH 301,1,Thursday,8:30-10:00,312,Mr. Mohammad Akbar Bin Shah,8
+CSE 319,1,Thursday,10:00-11:30,312,Ms. Arifa Sultana Zarna,8
+MATH 301,3,Thursday,01:30-03:00,N202,Mr. Mohammad Akbar Bin Shah,8
+CSE 317,2,Thursday,8:30-10:00,N601,TBA,8
+MATH 301,2,Thursday,10:00-11:30,N601,Mr. Mohammad Akbar Bin Shah,8
+CSE 317,3,Thursday,11:30-01:00,N601,TBA,8
+MATH 301,1,Thursday,11:30-01:00,N602,TBA,8
+CSE 320,1,Thursday,11:30-01:30,104,Ms. Arifa Sultana Zarna,8
+CSE 320,5,Thursday,11:30-01:30,N304,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,1,Saturday,11:30-01:00,107,Mr. Udoy Das,8
+MATH 301,3,Saturday,10:00-11:30,108,Mr. Udoy Das,8
+MATH 301,2,Saturday,01:30-03:00,N 601,Mr. Udoy Das,8
+CSE 320,3,Saturday,01:30-03:30,102,Mr. Md. Jahidul Hasan Jahid,8
+CSE 320,1,Saturday,03:30-05:30,102,Mr. Md. Jahidul Hasan Jahid,8
+CSE 320,2,Saturday,11:30-01:30,313,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,2,Sunday,01:30-03:00,107,Mr. Udoy Das,8
+CSE 319,2,Sunday,03:00-04:30,107,Mr. Md. Jahidul Hasan Jahid,8
+CSE 319,2,Sunday,04:30-06:00,107,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,3,Sunday,8:30-10:00,N 601,Mr. Udoy Das,8
+CSE 319,3,Sunday,10:00-11:30,N 601,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,4,Sunday,10:00-11:30,N 602,Mr. Udoy Das,8
+CSE 319,4,Sunday,11:30-01:00,N 602,Mr. Md. Jahidul Hasan Jahid,8
+MATH 301,1,Tuesday,10:00-11:30,107,Mr. Udoy Das,8
+CSE 319,1,Tuesday,11:30-01:00,107,Mr. Md. Jahidul Hasan Jahid,8
+CSE 317,3,Tuesday,03:00-04:30,N 603,TBA,8
+CSE 319,3,Tuesday,04:30-06:00,N 603,Mr. Md. Jahidul Hasan Jahid,8
+CSE 319,2,Tuesday,03:00-04:30,N 604,Mr. Md. Jahidul Hasan Jahid,8
+CSE 317,2,Tuesday,04:30-06:00,N 604,TBA,8
+MATH 301,4,Wednesday,03:00-04:30,311,Mr. Udoy Das,8
+CSE 317,4,Wednesday,04:30-06:00,311,TBA,8
+CSE 317,4,Thursday,8:30-10:00,108,TBA,8
+CSE 317,2,Thursday,10:00-11:30,114,TBA,8
+CSE 317,1,Thursday,11:30-01:00,N 603,TBA,8
+CSE 320,4,Thursday,11:30-01:30,313,Ms. Arifa Sultana Zarna,8
+CSE 328,1,Saturday,9:30-11:30,102,Mr. Udoy Das,9
+ME 102,1,Saturday,11:30-01:30,102,TBA,9
+CSE 328,4,Saturday,01:30-03:30,102,Mr. Udoy Das,9
+ME 102,2,Saturday,9:30-11:30,313,TBA,9
+CSE 328,2,Saturday,11:30-01:30,313,Mr. Udoy Das,9
+ME 102,3,Saturday,01:30-03:30,N304,TBA,9
+ME 102,3,Saturday,03:30-05:30,N304,TBA,9
+CSE 322,2,Monday,03:00-04:45,313,TBA,9
+CSE 321,3,Tuesday,01:30-03:00,311,TBA,9
+CSE 411,3,Tuesday,03:00-04:30,311,Mr. Saklain Abdullah,9
+CSE 411,3,Tuesday,04:30-06:30,311,Mr. Saklain Abdullah,9
+CSE 411,2,Tuesday,01:30-03:00,312,Mr. Saklain Abdullah,9
+CSE 321,4,Tuesday,03:00-04:30,312,TBA,9
+CSE 411,4,Tuesday,04:30-06:30,312,Mr. Saklain Abdullah,9
+CSE 321,2,Tuesday,11:30-01:00,N203,TBA,9
+CSE 321,1,Wednesday,11:30-01:00,107,TBA,9
+CSE 327,2,Wednesday,01:30-03:00,312,Mr. Udoy Das,9
+CSE 327,3,Wednesday,03:00-04:30,312,Mr. Udoy Das,9
+CSE 411,3,Wednesday,04:30-06:30,312,Mr. Saklain Abdullah,9
+CSE 321,4,Wednesday,01:30-03:00,N203,TBA,9
+CSE 327,4,Wednesday,11:30-01:00,N601,Mr. Udoy Das,9
+CSE 411,2,Wednesday,11:30-01:00,N602,Mr. Saklain Abdullah,9
+CSE 411,1,Wednesday,01:30-03:00,N603,Mr. Saklain Abdullah,9
+CSE 322,1,Wednesday,9:30-11:30,102,TBA,9
+ME 102,4,Wednesday,9:30-11:30,N304,TBA,9
+CSE 327,3,Thursday,11:30-01:00,107,Mr. Udoy Das,9
+CSE 321,3,Thursday,01:30-03:00,107,TBA,9
+CSE 411,1,Thursday,01:30-03:00,108,Mr. Saklain Abdullah,9
+CSE 327,1,Thursday,03:00-04:30,108,Mr. Udoy Das,9
+CSE 327,1,Thursday,04:30-06:30,108,Mr. Udoy Das,9
+CSE 327,4,Thursday,01:30-03:00,114,Mr. Udoy Das,9
+CSE 411,4,Thursday,03:00-04:30,114,Mr. Saklain Abdullah,9
+CSE 411,4,Thursday,04:30-06:30,114,Mr. Saklain Abdullah,9
+CSE 322,3,Thursday,9:30-11:30,102,TBA,9
+CSE 327,2,Saturday,01:30-03:00,108,Ms. Maliha Zahan Chowdhury,9
+CSE 327,1,Saturday,11:30-01:00,110,Ms. Maliha Zahan Chowdhury,9
+CSE 328,1,Saturday,9:30-11:30,313,Ms. Maliha Zahan Chowdhury,9
+ME 102,8,Saturday,9:30-11:30,Novus 304,TBA,9
+ME 102,8,Saturday,11:30-01:30,Novus 304,TBA,9
+CSE 411,2,Sunday,11:30-01:00,107,Mr. Saklain Abdullah,9
+CSE 327,1,Sunday,01:30-03:00,311,Ms. Maliha Zahan Chowdhury,9
+CSE 328,2,Sunday,03:30-05:30,313,Ms. Maliha Zahan Chowdhury,9
+CSE 411,2,Tuesday,03:00-04:30,N 601,Mr. Saklain Abdullah,9
+ME 102,7,Tuesday,03:30-05:30,115,Mr. Udoy Das,9
+ME 102,6,Tuesday,01:30-03:30,313,TBA,9
+ME 102,6,Tuesday,03:30-05:30,313,TBA,9
+ME 102,11,Tuesday,9:30-11:30,Novus 304,TBA,9
+ME 102,3,Tuesday,03:30-05:30,Novus 304,Mr. Md. Sajeed-Ur-Rahman,9
+CSE 327,1,Wednesday,03:00-04:30,N 604,Ms. Maliha Zahan Chowdhury,9
+ME 102,10,Wednesday,01:30-03:30,104,Mr. Udoy Das,9
+ME 102,10,Wednesday,03:30-05:30,104,Mr. Udoy Das,9
+ME 102,4,Wednesday,9:30-11:30,115,Mr. Udoy Das,9
+ME 102,5,Wednesday,11:30-01:30,Novus 304,Mr. Md. Sajeed-Ur-Rahman,9
+CSE 411,1,Thursday,10:00-11:30,110,Mr. Saklain Abdullah,9
+CSE 411,2,Thursday,11:30-01:00,N 203,Mr. Saklain Abdullah,9
+ME 102,9,Thursday,03:30-05:30,102,TBA,9
+ME 102,2,Thursday,11:30-01:30,Novus 304,TBA,9
+ME 102,1,Thursday,01:30-03:30,Novus 304,TBA,9
+CSE 439,1,Sunday,03:00-04:30,110,Mr. Golam Moktader Daiyan,10
+CSE 439,2,Sunday,04:30-06:30,111,Mr. Golam Moktader Daiyan,10
+CSE 463,2,Wednesday,01:30-03:00,103,Ms. Arshiana Shamir,10
+CSE 439,2,Wednesday,03:00-04:30,103,Mr. Golam Moktader Daiyan,10
+CSE 439,2,Wednesday,04:30-06:30,103,Mr. Golam Moktader Daiyan,10
+CSE 463,1,Wednesday,03:00-04:30,111,Ms. Arshiana Shamir,10
+CSE 439,1,Wednesday,04:30-06:30,111,Mr. Golam Moktader Daiyan,10
+CSE 463,1,Thursday,01:30-03:00,N601,Ms. Arshiana Shamir,10
+CSE 463,2,Thursday,11:30-01:00,N604,Ms. Arshiana Shamir,10
+CSE 439,2,Sunday,10:00-11:30,108,Ms. Arifa Sultana Zarna,10
+CSE 439,5,Sunday,03:00-04:30,111,Mr. Golam Moktader Daiyan,10
+CSE 439,4,Sunday,04:30-06:00,114,Mr. Golam Moktader Daiyan,10
+CSE 439,3,Sunday,11:30-01:00,311,Ms. Arifa Sultana Zarna,10
+CSE 439,2,Tuesday,10:00-11:30,N 202,Ms. Arifa Sultana Zarna,10
+CSE 463,2,Tuesday,11:30-01:00,N 202,Ms. Arshiana Shamir,10
+CSE 439,3,Tuesday,11:30-01:00,N 203,Ms. Arifa Sultana Zarna,10
+CSE 463,3,Tuesday,01:30-03:00,N 203,Ms. Arshiana Shamir,10
+CSE 439,5,Wednesday,04:30-06:00,110,Mr. Golam Moktader Daiyan,10
+CSE 463,1,Wednesday,01:30-03:00,311,Mr. Md. Sabbir Al Ahsan,10
+CSE 439,4,Thursday,03:00-04:30,114,Mr. Golam Moktader Daiyan,10
+CSE 439,4,Thursday,04:30-06:00,114,Mr. Golam Moktader Daiyan,10
+CSE 463,2,Thursday,11:30-01:00,N 202,Ms. Arshiana Shamir,10
+CSE 439,1,Thursday,01:30-03:00,N 202,Ms. Arifa Sultana Zarna,10
+CSE 463,3,Thursday,03:00-04:30,N 203,Ms. Arshiana Shamir,10
+IPD 400,0,Sunday,03:00-04:30,N202,TBA,11
+IPD 400,0,Sunday,04:30-06:30,N202,TBA,11
+CSE 459,1,Sunday,11:30-01:00,N203,Ms. Nahida Nigar,11
+CSE 459,2,Sunday,03:00-04:30,N203,Ms. Nahida Nigar,11
+CSE 459,1,Tuesday,10:00-11:30,N202,Ms. Nahida Nigar,11
+CSE 459,2,Wednesday,10:00-11:30,N203,Ms. Nahida Nigar,11
+IPD 400,0,Thursday,03:00-04:30,N201,TBA,11
+CSE 459,3,Thursday,03:00-04:30,N202,Ms. Nahida Nigar,11

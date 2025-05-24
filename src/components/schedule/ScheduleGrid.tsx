@@ -1,5 +1,19 @@
-
-import React from 'react';
+import { useState } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { Badge } from "@/components/ui/badge";
+import { CalendarClock, MapPin, User } from "lucide-react";
 
 export interface ScheduleItem {
   id: string;
@@ -10,7 +24,9 @@ export interface ScheduleItem {
   section: string;
   room: string;
   faculty: string;
-  type: 'lecture' | 'tutorial' | 'lab' | 'exam' | 'free';
+  type: string;
+  semester?: number;
+  sectionNumber?: number;
 }
 
 interface ScheduleGridProps {
@@ -18,70 +34,176 @@ interface ScheduleGridProps {
 }
 
 const ScheduleGrid: React.FC<ScheduleGridProps> = ({ scheduleItems }) => {
-  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+
+  // Sort days in correct order
+  const daysOrder = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
+  // Time slots (based on the schedule data)
   const timeSlots = [
-    '8:30 AM', '9:30 AM', '10:30 AM', '11:30 AM', 
-    '12:30 PM', '1:30 PM', '2:30 PM', '3:30 PM', '4:30 PM'
+    "8:30-9:00", "9:00-9:30", "9:30-10:00", "10:00-10:30", 
+    "10:30-11:00", "11:00-11:30", "11:30-12:00", "12:00-12:30",
+    "12:30-1:00", "1:00-1:30", "1:30-2:00", "2:00-2:30", 
+    "2:30-3:00", "3:00-3:30", "3:30-4:00", "4:00-4:30", 
+    "4:30-5:00", "5:00-5:30", "5:30-6:00"
   ];
 
-  // Create a mapping of day-time to schedule item
-  const scheduleMap = new Map<string, ScheduleItem>();
-  
-  scheduleItems.forEach(item => {
-    const key = `${item.day}-${item.startTime}`;
-    scheduleMap.set(key, item);
-  });
+  // Group schedule items by day
+  const scheduleByDay = scheduleItems.reduce((acc, item) => {
+    if (!acc[item.day]) {
+      acc[item.day] = [];
+    }
+    acc[item.day].push(item);
+    return acc;
+  }, {} as Record<string, ScheduleItem[]>);
 
-  const getScheduleForTimeSlot = (day: string, time: string): ScheduleItem | undefined => {
-    return scheduleMap.get(`${day}-${time}`);
+  // Get all days present in the schedule (sorted by proper week order)
+  const days = Object.keys(scheduleByDay).sort(
+    (a, b) => daysOrder.indexOf(a) - daysOrder.indexOf(b)
+  );
+
+  // Format time for display (convert to 12-hour format)
+  const formatTime = (time: string) => {
+    const [hours, minutes] = time.split(':').map(Number);
+    const period = hours >= 12 ? 'PM' : 'AM';
+    const hour12 = hours % 12 === 0 ? 12 : hours % 12;
+    return `${hour12}:${minutes.toString().padStart(2, '0')} ${period}`;
+  };
+
+  // Check if a class occupies a time slot
+  const isClassInTimeSlot = (item: ScheduleItem, timeSlot: string) => {
+    const [slotStart, slotEnd] = timeSlot.split('-');
+    
+    // Compare with item's time
+    return item.startTime <= slotStart && item.endTime >= slotEnd;
+  };
+
+  // Get color class based on course name
+  const getCourseColor = (course: string) => {
+    const coursePrefix = course.split(' ')[0];
+    
+    switch (coursePrefix) {
+      case 'CSE':
+        return 'bg-blue-100 border-blue-300 text-blue-800';
+      case 'AA':
+        return 'bg-green-100 border-green-300 text-green-800';
+      case 'MATH':
+        return 'bg-purple-100 border-purple-300 text-purple-800';
+      case 'ENG':
+        return 'bg-yellow-100 border-yellow-300 text-yellow-800';
+      default:
+        return 'bg-gray-100 border-gray-300 text-gray-800';
+    }
   };
 
   return (
-    <div className="overflow-x-auto pb-6">
-      <div className="schedule-grid min-w-[800px] w-full">
-        {/* Empty top-left cell */}
-        <div className="bg-gray-100 p-4 font-semibold text-center">Time/Day</div>
-        
-        {/* Day headers */}
-        {days.map(day => (
-          <div key={day} className="bg-gray-100 p-4 font-semibold text-center">
+    <div className="overflow-x-auto">
+      <div className="min-w-max grid grid-cols-[auto_repeat(auto-fill,minmax(150px,1fr))]">
+        {/* Header row with days */}
+        <div className="sticky left-0 bg-background z-10 border-r p-2 font-semibold">
+          Time / Day
+        </div>
+        {days.map((day) => (
+          <div key={day} className="p-2 text-center font-semibold border-b">
             {day}
           </div>
         ))}
-        
-        {/* Time slots and schedule cells */}
-        {timeSlots.map(time => (
-          <React.Fragment key={time}>
-            {/* Time label */}
-            <div className="bg-gray-50 p-3 text-sm md:text-base text-center font-medium flex items-center justify-center">
-              {time}
+
+        {/* Time slots rows */}
+        {timeSlots.map((timeSlot) => (
+          <div key={timeSlot} className="contents">
+            <div className="sticky left-0 bg-background z-10 border-r p-2 text-sm border-t">
+              {formatTime(timeSlot.split('-')[0])}
             </div>
-            
-            {/* Schedule cells for each day */}
-            {days.map(day => {
-              const scheduleItem = getScheduleForTimeSlot(day, time);
+
+            {/* Schedule cells */}
+            {days.map((day) => {
+              const classesInSlot = scheduleByDay[day].filter(item => 
+                isInTimeRange(timeSlot, `${item.startTime}-${item.endTime}`)
+              );
               
-              return scheduleItem ? (
-                <div 
-                  key={`${day}-${time}`} 
-                  className={`schedule-cell ${scheduleItem.type} p-3`}
-                >
-                  <div className="font-semibold text-sm md:text-base">{scheduleItem.course}</div>
-                  <div className="text-xs md:text-sm opacity-90">Sec: {scheduleItem.section}</div>
-                  <div className="text-xs md:text-sm opacity-90">Room: {scheduleItem.room}</div>
-                  <div className="text-xs md:text-sm opacity-90 truncate">{scheduleItem.faculty}</div>
-                </div>
-              ) : (
-                <div key={`${day}-${time}`} className="schedule-cell free p-3">
-                  <span className="text-xs md:text-sm">Free</span>
+              return (
+                <div key={`${day}-${timeSlot}`} className="border p-1 border-t min-h-12">
+                  {classesInSlot.map(item => (
+                    <TooltipProvider key={item.id}>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <div
+                            className={`text-xs p-1 rounded border cursor-pointer transition-opacity ${getCourseColor(
+                              item.course
+                            )} ${
+                              hoveredItem === item.id
+                                ? "opacity-100"
+                                : "opacity-80"
+                            }`}
+                            onMouseEnter={() => setHoveredItem(item.id)}
+                            onMouseLeave={() => setHoveredItem(null)}
+                          >
+                            <div className="font-medium">{item.course}</div>
+                            <div className="flex items-center gap-1 mt-1">
+                              <MapPin size={10} /> {item.room || "TBD"}
+                            </div>
+                          </div>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <div className="space-y-2">
+                            <div className="font-bold">{item.course}</div>
+                            <div className="flex items-center gap-2">
+                              <CalendarClock size={14} />
+                              <span>
+                                {formatTime(item.startTime)} - {formatTime(item.endTime)}
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <MapPin size={14} />
+                              <span>{item.room || "Room TBD"}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <User size={14} />
+                              <span>{item.faculty}</span>
+                            </div>
+                            <div className="flex gap-2 mt-1">
+                              <Badge variant="outline">
+                                Section {item.section}
+                              </Badge>
+                              <Badge variant="secondary">{item.type}</Badge>
+                            </div>
+                          </div>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  ))}
                 </div>
               );
             })}
-          </React.Fragment>
+          </div>
         ))}
       </div>
     </div>
   );
 };
+
+// Helper function to check if a class time range overlaps with a time slot
+function isInTimeRange(timeSlotRange: string, classTimeRange: string): boolean {
+  const [slotStart, slotEnd] = timeSlotRange.split('-');
+  const [classStart, classEnd] = classTimeRange.split('-');
+  
+  // Convert times to comparable numbers (e.g., "10:30" -> 10.5)
+  const convertToNumber = (time: string) => {
+    const [hours, minutes] = time.split(':').map(Number);
+    return hours + minutes / 60;
+  };
+  
+  const slotStartNum = convertToNumber(slotStart);
+  const slotEndNum = convertToNumber(slotEnd);
+  const classStartNum = convertToNumber(classStart);
+  const classEndNum = convertToNumber(classEnd);
+  
+  // Check if there's any overlap between the time ranges
+  return (
+    (classStartNum <= slotStartNum && classEndNum > slotStartNum) || // Class starts before slot and ends during/after slot
+    (classStartNum >= slotStartNum && classStartNum < slotEndNum) // Class starts during slot
+  );
+}
 
 export default ScheduleGrid;

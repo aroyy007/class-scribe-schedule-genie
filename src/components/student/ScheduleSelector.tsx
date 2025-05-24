@@ -18,6 +18,8 @@ import {
 import { Button } from "@/components/ui/button";
 import ScheduleGrid, { ScheduleItem } from "../schedule/ScheduleGrid";
 import { Progress } from "@/components/ui/progress";
+import { AlertCircle } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const ScheduleSelector = () => {
   const [semester, setSemester] = useState("");
@@ -26,39 +28,70 @@ const ScheduleSelector = () => {
   const [schedule, setSchedule] = useState<ScheduleItem[]>([]);
   const [showSchedule, setShowSchedule] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pdfLoading, setPdfLoading] = useState(false);
 
-  // Fix 1: Set a default API URL if the environment variable isn't available
+  // Use environment variable for API URL with fallback
   const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
   const handleGenerateSchedule = async () => {
+    if (!semester || !section) {
+      setError("Please select both semester and section");
+      return;
+    }
+
     setLoading(true);
     setError(null);
     
     try {
-      // Fix 2: Use the correct endpoint structure
+      console.log("Sending request with:", { semester, section });
+      
+      // Send request to backend API
       const response = await axios.post(`${API_URL}/schedule`, {
         semester: parseInt(semester),
         section: parseInt(section)
       });
       
-      // Fix 3: Transform API response to match ScheduleItem structure if needed
-      const scheduleData = response.data.map((item: any) => ({
-        id: item._id || String(Math.random()),
-        day: item.day,
-        startTime: item.startTime,
-        endTime: item.endTime,
-        course: item.course,
-        section: item.sectionCode || item.section,
-        room: item.room,
-        faculty: item.faculty || item.instructor,
-        type: item.type || 'lecture'
-      }));
+      console.log("Response:", response.data);
       
-      setSchedule(scheduleData);
-      setShowSchedule(true);
+      if (response.data && Array.isArray(response.data)) {
+        // Transform API response to match ScheduleItem structure
+        const scheduleData = response.data.map((item: any) => ({
+          id: item._id || String(Math.random()),
+          day: item.day,
+          startTime: item.startTime,
+          endTime: item.endTime,
+          course: item.course,
+          section: item.sectionCode,
+          room: item.room || 'TBD',
+          faculty: item.faculty,
+          type: item.type || 'lecture',
+          semester: item.semester,
+          sectionNumber: item.section
+        }));
+        
+        setSchedule(scheduleData);
+        setShowSchedule(scheduleData.length > 0);
+        
+        if (scheduleData.length === 0) {
+          setError("No schedule found for the selected semester and section");
+        }
+      } else {
+        // Handle case where response is not an array
+        setError("Invalid response format from server");
+        setShowSchedule(false);
+      }
     } catch (err: any) {
-      console.error(err);
-      setError(err.message || "Failed to load schedule. Please try again.");
+      console.error("Error details:", err.response?.data || err.message);
+      
+      // Handle different error scenarios
+      if (err.response?.status === 404) {
+        setError("No schedule found for the selected semester and section");
+      } else if (err.response?.data?.error) {
+        setError(err.response.data.error);
+      } else {
+        setError("Failed to load schedule. Please try again.");
+      }
+      
       setShowSchedule(false);
     } finally {
       setLoading(false);
@@ -67,27 +100,42 @@ const ScheduleSelector = () => {
 
   const handleDownloadPDF = async () => {
     try {
+      setPdfLoading(true);
+      
+      // Send schedule data to backend for PDF generation
       const response = await axios.post(
         `${API_URL}/generate-pdf`,
-        schedule,  // Fix 4: Send schedule directly as expected by the backend
+        schedule,
         { responseType: 'blob' }
       );
       
+      // Create and click a download link
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
       link.setAttribute('download', `schedule-sem-${semester}-sec-${section}.pdf`);
       document.body.appendChild(link);
       link.click();
+      
+      // Clean up
+      window.URL.revokeObjectURL(url);
       link.remove();
-    } catch (err) {
+    } catch (err: any) {
       console.error('PDF download failed:', err);
       setError("Failed to download PDF. Please try again.");
+    } finally {
+      setPdfLoading(false);
     }
   };
 
+  const clearSchedule = () => {
+    setShowSchedule(false);
+    setSchedule([]);
+    setError(null);
+  };
+
   return (
-    <Card>
+    <Card className="w-full max-w-4xl mx-auto">
       <CardHeader>
         <CardTitle>Generate Your Class Schedule</CardTitle>
         <CardDescription>
@@ -102,7 +150,10 @@ const ScheduleSelector = () => {
             </label>
             <Select
               value={semester}
-              onValueChange={setSemester}
+              onValueChange={(value) => {
+                setSemester(value);
+                clearSchedule();
+              }}
             >
               <SelectTrigger id="semester">
                 <SelectValue placeholder="Select Semester" />
@@ -130,7 +181,10 @@ const ScheduleSelector = () => {
             </label>
             <Select
               value={section}
-              onValueChange={setSection}
+              onValueChange={(value) => {
+                setSection(value);
+                clearSchedule();
+              }}
             >
               <SelectTrigger id="section">
                 <SelectValue placeholder="Select Section" />
@@ -141,15 +195,20 @@ const ScheduleSelector = () => {
                 <SelectItem value="3">Section 3</SelectItem>
                 <SelectItem value="4">Section 4</SelectItem>
                 <SelectItem value="5">Section 5</SelectItem>
+                <SelectItem value="6">Section 6</SelectItem>
               </SelectContent>
             </Select>
           </div>
         </div>
         
         {error && (
-          <div className="mt-4 p-3 bg-red-50 border border-red-200 text-red-600 rounded-md text-sm">
-            {error}
-          </div>
+          <Alert variant="destructive" className="mt-4">
+            <AlertCircle className="h-4 w-4" />
+            <AlertTitle>Error</AlertTitle>
+            <AlertDescription>
+              {error}
+            </AlertDescription>
+          </Alert>
         )}
         
         <div className="flex justify-center mt-4">
@@ -170,22 +229,27 @@ const ScheduleSelector = () => {
         )}
       </CardContent>
 
-      {showSchedule && !loading && (
-        <CardContent className="pt-4">
+      {showSchedule && !loading && schedule.length > 0 && (
+        <CardContent className="pt-4 border-t">
           <div className="mb-4">
             <h3 className="text-lg font-semibold">
               Schedule for Semester {semester}, Section {section}
             </h3>
             <p className="text-sm text-muted-foreground">
-              Below is your personalized class schedule. You can download it or add it to your calendar.
+              Found {schedule.length} classes for your schedule. You can download it as PDF or add it to your calendar.
             </p>
           </div>
           
           <ScheduleGrid scheduleItems={schedule} />
           
-          <div className="flex justify-end gap-2 mt-4">
-            <Button variant="outline" size="sm" onClick={handleDownloadPDF}>
-              Download PDF
+          <div className="flex flex-wrap justify-end gap-2 mt-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={handleDownloadPDF}
+              disabled={pdfLoading}
+            >
+              {pdfLoading ? "Downloading..." : "Download PDF"}
             </Button>
             <Button variant="outline" size="sm">
               Add to Calendar

@@ -40,16 +40,32 @@ exports.generatePDF = async (req, res) => {
     doc.moveTo(50, doc.y).lineTo(550, doc.y).stroke();
     doc.moveDown(0.5);
 
+    // Sort schedule data by day and time
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    
+    const sortedData = [...scheduleData].sort((a, b) => {
+      // First sort by day
+      const dayDiff = days.indexOf(a.day) - days.indexOf(b.day);
+      if (dayDiff !== 0) return dayDiff;
+      
+      // Then sort by start time
+      const aTime = a.startTime.split(':').map(Number);
+      const bTime = b.startTime.split(':').map(Number);
+      
+      if (aTime[0] !== bTime[0]) return aTime[0] - bTime[0];
+      return aTime[1] - bTime[1];
+    });
+
     // Add schedule items
-    scheduleData.forEach(item => {
+    sortedData.forEach(item => {
       const timeSlot = `${item.startTime} - ${item.endTime}`;
-      const courseInfo = `${item.course} (Sec: ${item.section})`;
+      const courseInfo = `${item.course} (Sec: ${item.sectionCode || item.section})`;
       
       doc.fontSize(11)
         .text(item.day, 50, doc.y, { width: 80 })
         .text(timeSlot, 130, doc.y - doc.currentLineHeight(), { width: 120 })
         .text(courseInfo, 250, doc.y - doc.currentLineHeight(), { width: 100 })
-        .text(item.room, 350, doc.y - doc.currentLineHeight(), { width: 80 })
+        .text(item.room || 'N/A', 350, doc.y - doc.currentLineHeight(), { width: 80 })
         .text(item.faculty, 430, doc.y - doc.currentLineHeight(), { width: 120 });
 
       doc.moveDown();

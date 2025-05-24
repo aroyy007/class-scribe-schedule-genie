@@ -8,7 +8,7 @@ const scheduleSchema = new mongoose.Schema({
   endTime: { type: String, required: true },
   course: { type: String, required: true },
   sectionCode: { type: String, required: true },
-  room: { type: String, required: true },
+  room: { type: String, required: false }, // Not all rooms have values
   faculty: { type: String, required: true },
   type: { 
     type: String, 
@@ -16,5 +16,8 @@ const scheduleSchema = new mongoose.Schema({
     enum: ['lecture', 'tutorial', 'lab', 'exam', 'free']
   }
 });
+
+// Add index to improve query performance
+scheduleSchema.index({ semester: 1, section: 1 });
 
 module.exports = mongoose.model('Schedule', scheduleSchema);
