@@ -97,32 +97,118 @@
   }
 }
 
-/* Hero section with doodle background */
-.hero-doodle-bg {
-  background-image: url('/lovable-uploads/2bae1ad8-fd6a-48f2-b009-0ab3833f997b.png');
-  background-repeat: repeat;
-  background-size: 400px;
-  background-position: center;
-  opacity: 0.1;
-  position: relative;
-  filter: blur(1px);
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.hero-doodle-bg::before {
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(106, 0, 50, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Animation */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
   content: '';
   position: absolute;
-  top: 0;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(106, 0, 50, 0.05) 0%, rgba(245, 245, 245, 0.9) 100%);
-  z-index: 1;
-  backdrop-filter: blur(2px);
+  background-color: #6a0032;
+  transition: width 0.3s ease;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* Schedule specific styles */
@@ -165,4 +251,13 @@
   .schedule-grid {
     grid-template-columns: 60px repeat(6, 1fr);
   }
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-enter {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+  animation: slideInRight 0.3s ease-out reverse;
 }

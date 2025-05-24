@@ -12,21 +12,21 @@ const Header = () => {
   };
 
   return (
-    <header className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b bg-primary sticky top-0 z-50 animate-fade-in-up">
       <div className="container flex h-16 items-center justify-between py-4">
-        <div className="flex items-center gap-2">
-          <Calendar className="h-6 w-6 text-primary" />
+        <div className="flex items-center gap-2 animate-slide-in-left">
+          <Calendar className="h-6 w-6 text-white" />
           <Link to="/" className="flex items-center">
-            <h1 className="text-xl font-bold text-primary">Class Scribe</h1>
+            <h1 className="text-xl font-bold text-white hover:text-gray-200 transition-colors">Class Scribe</h1>
           </Link>
         </div>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
-          <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
+        <nav className="hidden md:flex items-center gap-6 animate-slide-in-right">
+          <Link to="/" className="nav-link text-sm font-medium text-white hover:text-gray-200 transition-colors">
             Home
           </Link>
-          <Link to="/student" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link to="/student" className="nav-link text-sm font-medium text-white hover:text-gray-200 transition-colors">
             Student Portal
           </Link>
         </nav>
@@ -38,6 +38,7 @@ const Header = () => {
             size="icon" 
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
+            className="text-white hover:bg-white/10"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />
@@ -50,18 +51,18 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t bg-white/95 backdrop-blur-sm">
+        <div className="md:hidden border-t border-white/20 bg-primary mobile-menu-enter">
           <nav className="container py-4 space-y-4">
             <Link 
               to="/" 
-              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              className="block text-sm font-medium text-white hover:text-gray-200 transition-colors py-2 hover-lift"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               to="/student" 
-              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              className="block text-sm font-medium text-white hover:text-gray-200 transition-colors py-2 hover-lift"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Student Portal
