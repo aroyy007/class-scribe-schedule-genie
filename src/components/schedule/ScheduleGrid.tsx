@@ -34,6 +34,16 @@ interface ScheduleGridProps {
   scheduleItems: ScheduleItem[];
 }
 
+const courseColors = {
+  'CSE 328 (Uday)': '#8BC34A',    // Green
+  'ME 102 (AHN)': '#FFEB3B',      // Yellow
+  'CSE 327 (Uday)': '#90CAF9',    // Blue
+  'CSE 321 (TJ)': '#FFF59D',      // Light Yellow
+  'CSE 322 (TJ)': '#80DEEA',      // Cyan
+  'CSE 411 (Saklain)': '#EF9A9A', // Red
+  // Add more as needed
+};
+
 const ScheduleGrid: React.FC<ScheduleGridProps> = ({ scheduleItems }) => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
