@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   Table,
@@ -38,32 +37,10 @@ interface ScheduleGridProps {
 const ScheduleGrid: React.FC<ScheduleGridProps> = ({ scheduleItems }) => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
-  // Sort days in correct order
+  // Get all unique days in week order
   const daysOrder = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  
-  // Group schedule items by day
-  const scheduleByDay = scheduleItems.reduce((acc, item) => {
-    if (!acc[item.day]) {
-      acc[item.day] = [];
-    }
-    acc[item.day].push(item);
-    return acc;
-  }, {} as Record<string, ScheduleItem[]>);
-
-  // Get all days present in the schedule (sorted by proper week order)
-  const activeDays = Object.keys(scheduleByDay).sort(
-    (a, b) => daysOrder.indexOf(a) - daysOrder.indexOf(b)
-  );
-
-  // Format time for display (convert to 12-hour format)
-  const formatTime = (time: string) => {
-    const [hours, minutes] = time.split(':').map(Number);
-    const period = hours >= 12 ? 'PM' : 'AM';
-    const hour12 = hours % 12 === 0 ? 12 : hours % 12;
-    return `${hour12}:${minutes.toString().padStart(2, '0')} ${period}`;
-  };
-
-  // Get unique time slots from all schedule items
+  const allDays = daysOrder.filter(day => scheduleItems.some(item => item.day === day));
+  // Get all unique time slots in order
   const getUniqueTimeSlots = () => {
     const timeSlots = new Set<string>();
     scheduleItems.forEach(item => {
@@ -77,133 +54,105 @@ const ScheduleGrid: React.FC<ScheduleGridProps> = ({ scheduleItems }) => {
       return (hoursA * 60 + minutesA) - (hoursB * 60 + minutesB);
     });
   };
-
   const timeSlots = getUniqueTimeSlots();
+  // Get all unique rooms in order of appearance
+  const allRooms = Array.from(new Set(scheduleItems.map(item => item.room)));
 
-  // Find classes for a specific day and time slot
-  const getClassForDayAndTime = (day: string, timeSlot: string) => {
-    if (!scheduleByDay[day]) return null;
-    return scheduleByDay[day].find(item => 
-      `${item.startTime}-${item.endTime}` === timeSlot
+  // Helper to find class for a given day, time slot, and room
+  const getClassFor = (day: string, timeSlot: string, room: string) => {
+    return scheduleItems.find(item =>
+      item.day === day &&
+      `${item.startTime}-${item.endTime}` === timeSlot &&
+      item.room === room
     );
   };
 
-  if (scheduleItems.length === 0) {
-    return (
-      <div className="text-center py-8 text-gray-500">
-        No schedule data available
-      </div>
-    );
+  // Format time for display (convert to 12-hour format)
+  const formatTime = (time: string) => {
+    const [hours, minutes] = time.split(':').map(Number);
+    const period = hours >= 12 ? 'PM' : 'AM';
+    const hour12 = hours % 12 === 0 ? 12 : hours % 12;
+    return `${hour12}:${minutes.toString().padStart(2, '0')} ${period}`;
+  };
+
+  // Helper: generate a color for a course code (not too bright or light)
+  function getCourseColor(course: string) {
+    // Hash course code to a color in a fixed palette
+    const palette = [
+      'bg-blue-200 text-blue-900',
+      'bg-green-200 text-green-900',
+      'bg-yellow-200 text-yellow-900',
+      'bg-purple-200 text-purple-900',
+      'bg-pink-200 text-pink-900',
+      'bg-orange-200 text-orange-900',
+      'bg-teal-200 text-teal-900',
+      'bg-red-200 text-red-900',
+      'bg-indigo-200 text-indigo-900',
+      'bg-amber-200 text-amber-900',
+    ];
+    let hash = 0;
+    for (let i = 0; i < course.length; i++) hash = course.charCodeAt(i) + ((hash << 5) - hash);
+    return palette[Math.abs(hash) % palette.length];
   }
 
+  // For each day, render a separate, compact table
   return (
-    <div className="w-full">
-      <h3 className="text-lg font-semibold mb-4 text-center">CLASS SCHEDULE</h3>
-      
-      {activeDays.map(day => (
-        <div key={day} className="mb-8">
-          <h4 className="text-md font-semibold mb-3 text-center bg-gray-100 py-2 rounded">
-            {day.toUpperCase()}
-          </h4>
-          
-          <Table className="border">
-            <TableHeader>
-              <TableRow className="bg-gray-600">
-                <TableHead className="text-white font-semibold text-center border border-gray-400">
-                  Room
-                </TableHead>
-                {timeSlots.map(timeSlot => {
-                  const [startTime, endTime] = timeSlot.split('-');
-                  const hasClassOnDay = scheduleByDay[day]?.some(item => 
-                    `${item.startTime}-${item.endTime}` === timeSlot
-                  );
-                  
-                  if (!hasClassOnDay) return null;
-                  
-                  return (
-                    <TableHead key={timeSlot} className="text-white font-semibold text-center border border-gray-400 min-w-[120px]">
-                      {formatTime(startTime)} – {formatTime(endTime)}
-                    </TableHead>
-                  );
-                })}
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {/* Get unique rooms for this day */}
-              {Array.from(new Set(scheduleByDay[day]?.map(item => item.room) || [])).map(room => (
-                <TableRow key={room} className="border">
-                  <TableCell className="font-medium bg-gray-600 text-white text-center border border-gray-400">
-                    {room}
-                  </TableCell>
-                  {timeSlots.map(timeSlot => {
-                    const classItem = scheduleByDay[day]?.find(item => 
-                      item.room === room && `${item.startTime}-${item.endTime}` === timeSlot
-                    );
-                    
-                    const hasClassOnDay = scheduleByDay[day]?.some(item => 
-                      `${item.startTime}-${item.endTime}` === timeSlot
-                    );
-                    
-                    if (!hasClassOnDay) return null;
-                    
+    <div className="w-full flex flex-col gap-4">
+      {allDays.map(day => {
+        // Get all time slots for this day
+        const slots = Array.from(new Set(scheduleItems.filter(item => item.day === day).map(item => `${item.startTime}-${item.endTime}`)))
+          .sort((a, b) => {
+            const [startA] = a.split('-');
+            const [startB] = b.split('-');
+            const [hoursA, minutesA] = startA.split(':').map(Number);
+            const [hoursB, minutesB] = startB.split(':').map(Number);
+            return (hoursA * 60 + minutesA) - (hoursB * 60 + minutesB);
+          });
+        // Get all rooms for this day
+        const rooms = Array.from(new Set(scheduleItems.filter(item => item.day === day).map(item => item.room)));
+        // Helper to get course for a cell
+        const getCourse = (room: string, slot: string) => {
+          const found = scheduleItems.find(item => item.day === day && item.room === room && `${item.startTime}-${item.endTime}` === slot);
+          return found ? found.course : '';
+        };
+        return (
+          <div key={day} className="w-full">
+            <h4 className="text-sm font-semibold mb-1 text-center bg-gray-100 py-1 rounded tracking-wide">{day.toUpperCase()}</h4>
+            <Table className="border w-[95vw] max-w-full mx-auto text-xs">
+              <TableHeader>
+                <TableRow className="bg-gray-600">
+                  <TableHead className="text-white font-semibold text-center border border-gray-400 min-w-[60px] px-2 py-1">Room</TableHead>
+                  {slots.map(slot => {
+                    const [start, end] = slot.split('-');
                     return (
-                      <TableCell key={timeSlot} className="text-center border border-gray-400 p-2">
-                        {classItem ? (
-                          <TooltipProvider>
-                            <Tooltip>
-                              <TooltipTrigger asChild>
-                                <div
-                                  className="cursor-pointer p-2 rounded transition-colors hover:bg-gray-50"
-                                  onMouseEnter={() => setHoveredItem(classItem.id)}
-                                  onMouseLeave={() => setHoveredItem(null)}
-                                >
-                                  <div className="font-medium text-sm">
-                                    {classItem.course}
-                                  </div>
-                                  <div className="text-xs text-gray-600">
-                                    ({classItem.faculty.replace(/^(Mr\.|Ms\.|Dr\.)\s*/, '')})
-                                  </div>
-                                </div>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <div className="space-y-2">
-                                  <div className="font-bold">{classItem.course}</div>
-                                  <div className="flex items-center gap-2">
-                                    <CalendarClock size={14} />
-                                    <span>
-                                      {formatTime(classItem.startTime)} - {formatTime(classItem.endTime)}
-                                    </span>
-                                  </div>
-                                  <div className="flex items-center gap-2">
-                                    <MapPin size={14} />
-                                    <span>{classItem.room}</span>
-                                  </div>
-                                  <div className="flex items-center gap-2">
-                                    <User size={14} />
-                                    <span>{classItem.faculty}</span>
-                                  </div>
-                                  <div className="flex gap-2 mt-1">
-                                    <Badge variant="outline">
-                                      Section {classItem.section}
-                                    </Badge>
-                                    <Badge variant="secondary">{classItem.type}</Badge>
-                                  </div>
-                                </div>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        ) : (
-                          <div className="h-12"></div>
-                        )}
-                      </TableCell>
+                      <TableHead key={slot} className="text-white font-semibold text-center border border-gray-400 min-w-[80px] px-2 py-1">
+                        {formatTime(start)}<br />-<br />{formatTime(end)}
+                      </TableHead>
                     );
                   })}
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      ))}
+              </TableHeader>
+              <TableBody>
+                {rooms.map(room => (
+                  <TableRow key={room} className="border">
+                    <TableCell className="font-medium bg-gray-600 text-white text-center border border-gray-400 px-2 py-1">{room}</TableCell>
+                    {slots.map(slot => {
+                      const course = getCourse(room, slot);
+                      return (
+                        <TableCell key={slot} className={`text-center border border-gray-400 px-1 py-1`}>
+                          {course && (
+                            <span className={`block rounded font-semibold text-xs px-1 py-0.5 ${getCourseColor(course)}`}>{course}</span>
+                          )}
+                        </TableCell>
+                      );
+                    })}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        );
+      })}
     </div>
   );
 };

@@ -7,10 +7,10 @@ const StudentPortal = () => {
       <h1 className="text-3xl font-bold mb-8">Student Portal</h1>
       
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div className="lg:col-span-3">
+        <div className="col-span-full w-full">
           <ScheduleSelector />
         </div>
-        <div className="lg:col-span-1">
+        {/* <div className="lg:col-span-1">
           <div className="bg-white border rounded-lg p-6 mb-6">
             <h2 className="text-xl font-semibold mb-4">How To Use</h2>
             <ol className="space-y-3 text-sm text-gray-600 list-decimal pl-4">
@@ -58,7 +58,7 @@ const StudentPortal = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

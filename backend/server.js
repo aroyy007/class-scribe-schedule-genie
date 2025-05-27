@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
 // Database Connection
-connectDB();
+// connectDB();
 
 // Routes
 app.use('/api', require('./routes/api'));
@@ -55,5 +55,5 @@ app.use((req, res) => {
     .json({ error: 'Resource not found', path: req.originalUrl });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5100;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

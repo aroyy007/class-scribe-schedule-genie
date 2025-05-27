@@ -20,6 +20,8 @@ import ScheduleGrid, { ScheduleItem } from "../schedule/ScheduleGrid";
 import { Progress } from "@/components/ui/progress";
 import { AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { getScheduleFromCSV } from './getScheduleFromCSV';
+import Papa from 'papaparse';
 
 const ScheduleSelector = () => {
   const [semester, setSemester] = useState("");
@@ -30,8 +32,7 @@ const ScheduleSelector = () => {
   const [error, setError] = useState<string | null>(null);
   const [pdfLoading, setPdfLoading] = useState(false);
 
-  // Use environment variable for API URL with fallback
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5100/api';
 
   const handleGenerateSchedule = async () => {
     if (!semester || !section) {
@@ -41,57 +42,37 @@ const ScheduleSelector = () => {
 
     setLoading(true);
     setError(null);
-    
     try {
-      console.log("Sending request with:", { semester, section });
-      
-      // Send request to backend API
-      const response = await axios.post(`${API_URL}/schedule`, {
-        semester: parseInt(semester),
-        section: parseInt(section)
-      });
-      
-      console.log("Response:", response.data);
-      
-      if (response.data && Array.isArray(response.data)) {
-        // Transform API response to match ScheduleItem structure
-        const scheduleData = response.data.map((item: any) => ({
-          id: item._id || String(Math.random()),
-          day: item.day,
-          startTime: item.startTime,
-          endTime: item.endTime,
-          course: item.course,
-          section: item.sectionCode,
-          room: item.room || 'TBD',
-          faculty: item.faculty,
-          type: item.type || 'lecture',
-          semester: item.semester,
-          sectionNumber: item.section
-        }));
-        
-        setSchedule(scheduleData);
-        setShowSchedule(scheduleData.length > 0);
-        
-        if (scheduleData.length === 0) {
-          setError("No schedule found for the selected semester and section");
+      // Instead of backend API, load from CSV
+      const csvData = await getScheduleFromCSV(semester, section);
+      // Transform CSV data to match ScheduleItem structure
+      const scheduleData = csvData.map((item: Record<string, string>) => {
+        // Parse time range
+        let startTime = '', endTime = '';
+        if (item.time && item.time.includes('-')) {
+          [startTime, endTime] = item.time.split('-').map((t: string) => t.trim());
         }
-      } else {
-        // Handle case where response is not an array
-        setError("Invalid response format from server");
-        setShowSchedule(false);
-      }
-    } catch (err: any) {
-      console.error("Error details:", err.response?.data || err.message);
-      
-      // Handle different error scenarios
-      if (err.response?.status === 404) {
+        return {
+          id: `${item.course_code}-${item.section}-${item.day}-${item.time}`,
+          day: item.day,
+          startTime,
+          endTime,
+          course: item.course_code,
+          section: item.section,
+          room: item.room || 'TBD',
+          faculty: item.instructor || 'TBA',
+          type: 'lecture',
+          semester: Number(item.semester),
+          sectionNumber: Number(item.section)
+        };
+      });
+      setSchedule(scheduleData);
+      setShowSchedule(scheduleData.length > 0);
+      if (scheduleData.length === 0) {
         setError("No schedule found for the selected semester and section");
-      } else if (err.response?.data?.error) {
-        setError(err.response.data.error);
-      } else {
-        setError("Failed to load schedule. Please try again.");
       }
-      
+    } catch (err) {
+      setError("Failed to load schedule from CSV. Please try again.");
       setShowSchedule(false);
     } finally {
       setLoading(false);
@@ -102,26 +83,23 @@ const ScheduleSelector = () => {
     try {
       setPdfLoading(true);
       
-      // Send schedule data to backend for PDF generation
       const response = await axios.post(
         `${API_URL}/generate-pdf`,
         schedule,
         { responseType: 'blob' }
       );
       
-      // Create and click a download link
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
       link.setAttribute('download', `schedule-sem-${semester}-sec-${section}.pdf`);
       document.body.appendChild(link);
       link.click();
-      
-      // Clean up
+
       window.URL.revokeObjectURL(url);
       link.remove();
-    } catch (err: any) {
-      console.error('PDF download failed:', err);
+    } catch {
+      console.error('PDF download failed');
       setError("Failed to download PDF. Please try again.");
     } finally {
       setPdfLoading(false);
@@ -135,7 +113,7 @@ const ScheduleSelector = () => {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto">
+    <Card className="w-full max-w-none mx-auto">
       <CardHeader>
         <CardTitle>Generate Your Class Schedule</CardTitle>
         <CardDescription>
