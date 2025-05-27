@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AdminDashboard from "./pages/AdminDashboard";
 import StudentPortal from "./pages/StudentPortal";
+import GPACalculator from "./pages/GPACalculator";
+import CGPACalculator from "./pages/CGPACalculator";
 import NotFound from "./pages/NotFound";
 
 // Layout
@@ -27,6 +29,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/student" element={<StudentPortal />} />
+            <Route path="/gpa-calculator" element={<GPACalculator />} />
+            <Route path="/cgpa-calculator" element={<CGPACalculator />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

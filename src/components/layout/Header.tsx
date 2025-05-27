@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Calendar, Menu, X } from "lucide-react";
+import { Calendar, Menu, X, Calculator } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -28,6 +28,14 @@ const Header = () => {
           </Link>
           <Link to="/student" className="nav-link text-sm font-medium text-white hover:text-gray-200 transition-colors">
             Student Portal
+          </Link>
+          <Link to="/gpa-calculator" className="nav-link text-sm font-medium text-white hover:text-gray-200 transition-colors flex items-center gap-1">
+            <Calculator className="h-4 w-4" />
+            GPA Calculator
+          </Link>
+          <Link to="/cgpa-calculator" className="nav-link text-sm font-medium text-white hover:text-gray-200 transition-colors flex items-center gap-1">
+            <Calculator className="h-4 w-4" />
+            CGPA Calculator
           </Link>
         </nav>
 
@@ -66,6 +74,22 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Student Portal
+            </Link>
+            <Link 
+              to="/gpa-calculator" 
+              className="block text-sm font-medium text-white hover:text-gray-200 transition-colors py-2 hover-lift flex items-center gap-1"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Calculator className="h-4 w-4" />
+              GPA Calculator
+            </Link>
+            <Link 
+              to="/cgpa-calculator" 
+              className="block text-sm font-medium text-white hover:text-gray-200 transition-colors py-2 hover-lift flex items-center gap-1"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Calculator className="h-4 w-4" />
+              CGPA Calculator
             </Link>
           </nav>
         </div>
